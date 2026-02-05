@@ -3,7 +3,10 @@
     "allow": [
       "Bash(git init:*)",
       "Bash(git remote add:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nv0: 初始版本 - AI-E 项目文件\n\n包含角色文档、图片素材和视频文件\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(del:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nv1: 基础定位润色\n\n- 将角色文档拆分为三个独立文件\n- 01-角色档案：新增语言风格章节，格式统一\n- 02-动漫提示词：扩充场景词分类，补充参数建议\n- 03-写实提示词：去除对话痕迹，统一文档格式\n- 删除旧的合并文档 角色文档.md\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
     ]
   }
 }

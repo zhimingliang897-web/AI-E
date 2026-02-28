@@ -9,9 +9,6 @@ node_modules/
 # 大文件和嵌入仓库（不需要上传）
 LinAier_Studio/
 RVC-Basic-Model/
-autovideo/
 autovideo备份v1/
 autovideo备份v2/
-live/
-文档/
 封面提示词模板.txt

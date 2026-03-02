@@ -1,0 +1,34 @@
+{
+  "needs_list": [
+    {
+      "scene_id": "15_image_to_text",
+      "type": "clipart",
+      "description": "Image recognition and text extraction concept. Shows a photo or image being analyzed, with text appearing or being extracted from it. Visual concept for OCR (Optical Character Recognition) or image-to-text AI technology.",
+      "is_optional": false
+    },
+    {
+      "scene_id": "16_vqa",
+      "type": "clipart",
+      "description": "Visual Question Answering (VQA) concept. Shows an image with a question mark or someone asking about the image content. Represents AI analyzing an image and answering questions about what it contains.",
+      "is_optional": false
+    },
+    {
+      "scene_id": "01_intro_ai",
+      "type": "clipart",
+      "description": "Artificial Intelligence introduction icon. Robot, brain, neural network, or technology symbols. Should convey the concept of AI and machine learning in a friendly, approachable way.",
+      "is_optional": true
+    },
+    {
+      "scene_id": "02_ml_concept",
+      "type": "clipart",
+      "description": "Machine Learning concept. Shows algorithms, data processing, or learning pattern. Can depict a robot learning or data flowing through a system.",
+      "is_optional": true
+    }
+  ],
+  "metadata": {
+    "project": "day2",
+    "created": "2026-02-24",
+    "version": "2.0",
+    "description": "Clipart requirements (free materials only). Only processes type='clipart', ignores ai_image and ai_video"
+  }
+}

@@ -1,0 +1,762 @@
+[
+  {
+    "id": "01_title",
+    "text": "",
+    "visual": {
+      "type": "title_card",
+      "prompt": "什么是“幻觉”？ What is \"Hallucination\"?",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "fade_black"
+  },
+  {
+    "id": "02_intro_def",
+    "text": "什么是“幻觉”？",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "幻觉定义",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "03_03",
+    "text": "如果用最通俗的一句话来概括，大模型中的“幻觉”就是 AI 在一本正经地胡说八道。",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/03通俗概括.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "04_04",
+    "text": "当我们向 AI 提问时，它有时会给出看似逻辑严密、语法完美、态度自信的回答。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "表面可信",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "05_05",
+    "text": "但里面的事实、数据或引用，完全是捏造的、错误的。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "事实错误",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "06_06",
+    "text": "这种现象在人工智能领域就被称为“幻觉”。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "AI 幻觉",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "07_title_why",
+    "text": "",
+    "visual": {
+      "type": "title_card",
+      "prompt": "为什么会产生幻觉？ Why Does It Happen?",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "fade_black"
+  },
+  {
+    "id": "08_08",
+    "text": "这要回到底层逻辑：大语言模型本质上是一个强大的概率预测工具。",
+    "visual": {
+      "type": "manim",
+      "prompt": "Show a neural network with arrows labeled 'next token probability' and a dice icon beside it, clean 3D cartoon style",
+      "source": null,
+      "scene_class": "ProbabilityPredictor",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "09_09",
+    "text": "也就是一个高级的‘文字接龙’机器。",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/09文字接龙.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "10_10",
+    "text": "无事实数据库：AI 的大脑里并没有像人类一样存放着一个绝对真实的‘事实数据库’。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "无事实库",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "11_11",
+    "text": "概率预测：它回答问题，是根据输入的 Prompt 和训练阶段见过的海量文本，计算出下一个最有可能出现的词汇。",
+    "visual": {
+      "type": "manim",
+      "prompt": "Animated flow: 'Prompt → Token Embedding → Probability Distribution → Top-1 Token', all in clean 3D cartoon style",
+      "source": null,
+      "scene_class": "NextTokenPrediction",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "12_12",
+    "text": "缺乏坦诚：当遇到‘没见过’或‘记忆模糊’的知识点时，它通常不会像人类那样坦诚地说‘我不知道’。",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/12缺乏坦诚.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "13_13",
+    "text": "相反，它会顺着语言的概率惯性，硬生生地‘顺’出一个听起来合理、符合语法的句子。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "顺出答案",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "14_title_example",
+    "text": "",
+    "visual": {
+      "type": "title_card",
+      "prompt": "一个直观的例子 A Concrete Example",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "fade_black"
+  },
+  {
+    "id": "15_15",
+    "text": "提问：请介绍一下鲁迅在2008年北京奥运会上发表的演讲。",
+    "visual": {
+      "type": "ai_image",
+      "prompt": "Cartoon-style illustration of a confused student asking a question to an AI robot holding a scroll labeled '2008 Olympics'. Clean background, high quality 3D realistic cartoon style, bright lighting",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "16_16ai",
+    "text": "AI 回答：鲁迅在2008年北京奥运会上的演讲慷慨激昂，他强调了体育精神与民族觉醒的深刻联系……",
+    "visual": {
+      "type": "ai_image",
+      "prompt": "Cartoon-style AI robot speaking confidently at an Olympic stadium podium, with floating fake text bubbles showing '《青年与体育》' and '1936–2008', high quality 3D realistic cartoon style, bright and clean",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "17_17",
+    "text": "分析：AI 逻辑通顺、文笔流畅，但事实错得离谱——鲁迅先生早在1936年就逝世了。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "1936 ≠ 2008",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "18_18",
+    "text": "这就是典型的幻觉。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "典型幻觉",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "19_title_types",
+    "text": "",
+    "visual": {
+      "type": "title_card",
+      "prompt": "幻觉的常见类型 Common Types",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "fade_black"
+  },
+  {
+    "id": "20_20",
+    "text": "事实性捏造：最常见。比如编造一本不存在的书、一篇不存在的论文，甚至煞有介事地列出虚构作者和链接。",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/20事实性捏造.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "21_21",
+    "text": "逻辑性矛盾：上一段说 A 是对的，下一段又推导出 A 是错的，上下文不能自圆其说。",
+    "visual": {
+      "type": "manim",
+      "prompt": "Two speech bubbles: top says 'A is true', bottom says 'A is false', connected by a red X, clean 3D cartoon style",
+      "source": null,
+      "scene_class": "LogicalContradiction",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "22_title_sideeffect",
+    "text": "",
+    "visual": {
+      "type": "title_card",
+      "prompt": "一个有趣的副作用：圆谎机制 The Lie-Compounding Effect",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "fade_black"
+  },
+  {
+    "id": "23_23",
+    "text": "因为模型是‘接龙’的，如果它在第10个字选了一个概率只有1%的错字，那么第11个字就会基于这个错字继续圆谎。",
+    "visual": {
+      "type": "manim",
+      "prompt": "Animated chain: word1 → word2 → ... → word10 (glowing red) → word11 (branching wrong), all in clean 3D cartoon style",
+      "source": null,
+      "scene_class": "LieCompounding",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "24_24",
+    "text": "这就像撒了一个谎，后面要用一百个谎来圆。",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/24撒谎比喻.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "25_25",
+    "text": "这就是为什么模型有时候会一本正经地胡说八道。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "一本正经胡说",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "26_title_risk",
+    "text": "",
+    "visual": {
+      "type": "title_card",
+      "prompt": "为什么我们必须警惕幻觉？ Why Should We Care?",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "fade_black"
+  },
+  {
+    "id": "27_27",
+    "text": "因为 AI 的语言表达能力太强，它的谎言带有极强的‘欺骗性’。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "高欺骗性",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "28_28",
+    "text": "如果你把 AI 当作传统的搜索引擎，或是绝对真理的来源，就很容易被误导。",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/28误当搜索引擎.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "29_29",
+    "text": "在医疗诊断、法律判决、财务报表等严谨领域，直接依赖 AI 生成的内容非常危险。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "高危领域",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "30_30",
+    "text": "AI 就像一个极度渴望回答你所有问题、读过无数书但偶尔会记串行的高材生。",
+    "visual": {
+      "type": "ai_image",
+      "prompt": "Friendly cartoon student wearing glasses and holding thick books, slightly confused, standing next to a glowing brain icon with tangled wires, high quality 3D realistic cartoon style, bright lighting",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "31_31",
+    "text": "为了不让你交白卷，他宁可凭直觉瞎编。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "宁可瞎编",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "32_title_mitigation",
+    "text": "",
+    "visual": {
+      "type": "title_card",
+      "prompt": "如何减少或控制幻觉？ How to Mitigate It?",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "fade_black"
+  },
+  {
+    "id": "33_33rag",
+    "text": "提供外部知识：使用 RAG 技术，给 AI ‘开卷考试’。",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/33RAG技术.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "34_34",
+    "text": "不让它凭空想象，而是把真实的参考资料喂给它，要求它‘只能根据提供的资料回答’。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "据实回答",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "35_35",
+    "text": "使用工具：当 AI 判断自己不知道实时信息或准确数据时，让它调用外部代码。",
+    "visual": {
+      "type": "manim",
+      "prompt": "AI robot pressing a button labeled 'API CALL', with weather icon and database icon appearing, clean 3D cartoon style",
+      "source": null,
+      "scene_class": "ToolCalling",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "36_36",
+    "text": "比如去查真实的天气 API 或数据库，用真实数据来生成回答。",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/36真实数据生成.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "37_37prompt",
+    "text": "设置 Prompt 护栏：在提示词最后加上一句明确指令——",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "Prompt 护栏",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "38_38",
+    "text": "‘如果你不知道答案，请直接回答“我不知道”，绝对不要编造。’",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "我不知道",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  }
+]

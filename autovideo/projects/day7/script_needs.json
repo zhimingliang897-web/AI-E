@@ -1,0 +1,50 @@
+{
+  "needs_list": [
+    {
+      "scene_id": "02_intro",
+      "type": "clipart",
+      "filename": "assets/manual/02_intro.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "06_layer1_method",
+      "type": "clipart",
+      "filename": "assets/manual/06_layer1_method.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "07_layer1_limitation",
+      "type": "clipart",
+      "filename": "assets/manual/07_layer1_limitation.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "13_layer2_analogy",
+      "type": "clipart",
+      "filename": "assets/manual/13_layer2_analogy.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "16_layer3_pydantic",
+      "type": "clipart",
+      "filename": "assets/manual/16_layer3_pydantic.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "18_layer3_correction",
+      "type": "clipart",
+      "filename": "assets/manual/18_layer3_correction.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    }
+  ],
+  "summary": "共19个场景，需要AI生图0张，需要你准备6项素材",
+  "ai_image_count": 0,
+  "ai_video_count": 0,
+  "visual_mode": "image"
+}

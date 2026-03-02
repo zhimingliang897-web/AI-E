@@ -1,0 +1,42 @@
+{
+  "needs_list": [
+    {
+      "scene_id": "17_text_only",
+      "type": "clipart",
+      "filename": "assets/manual/17_text_only.png",
+      "description": "需要一张表示纯文本处理的插画，关键词：text only, document, ABC, no image, no video, flat cartoon"
+    },
+    {
+      "scene_id": "04_llm_examples_global",
+      "type": "ai_image",
+      "filename": "assets/images/04_llm_examples_global.png",
+      "description": "[Prompt] High quality 3D realistic cartoon style, clean UI icons floating on light background: Qwen logo, Doubao logo, ERNIE Bot logo — all modern, friendly, tech-themed, bright and easy to understand",
+      "is_optional": true
+    },
+    {
+      "scene_id": "05_llm_examples_intl",
+      "type": "ai_image",
+      "filename": "assets/images/05_llm_examples_intl.png",
+      "description": "[Prompt] High quality 3D realistic cartoon style, clean UI icons floating on light background: ChatGPT logo, Gemini logo — side-by-side with Qwen/Doubao/ERNIE from previous scene, all equally styled, unified color palette, friendly tech vibe",
+      "is_optional": true
+    },
+    {
+      "scene_id": "12_emergence_metaphor",
+      "type": "ai_image",
+      "filename": "assets/images/12_emergence_metaphor.png",
+      "description": "[Prompt] High quality 3D realistic cartoon style, glowing neural network inside a human head silhouette, with stars and 'EMERGENCE' in soft light — bright, clean, awe-inspiring but not sci-fi cliché",
+      "is_optional": true
+    },
+    {
+      "scene_id": "17_text_only_limitation",
+      "type": "clipart",
+      "filename": "assets/manual/17_text_only.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    }
+  ],
+  "summary": "共20个场景，需要AI生图3张，需要你准备2项素材",
+  "ai_image_count": 3,
+  "ai_video_count": 0,
+  "visual_mode": "image"
+}

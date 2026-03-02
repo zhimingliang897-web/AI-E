@@ -1,0 +1,64 @@
+[
+  {
+    "id": "01_intro",
+    "text": "This is a test draft for the project structure refactor.",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "Project Refactor",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "02_check",
+    "text": "We are testing if the script.json is generated in the project folder.",
+    "visual": {
+      "type": "manim",
+      "prompt": "Animated file system tree showing 'script.json' appearing inside 'project/' folder with checkmark glow, clean tech UI style",
+      "source": null,
+      "scene_class": "ScriptJsonGeneration",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "03_assets",
+    "text": "And if assets are resolved correctly.",
+    "visual": {
+      "type": "ai_video",
+      "prompt": "A cinematic 4K close-up of a glowing folder named 'assets' opening smoothly to reveal perfectly linked image and video files with golden connection lines pulsing gently, high quality 3D realistic cartoon style, cinematic lighting",
+      "source": "assets/videos/03_assets.mp4",
+      "scene_class": null,
+      "fallback": "ai_image::A glowing 'assets' folder opening to reveal neatly organized image and video icons with golden connection lines, high quality 3D realistic cartoon style, cinematic lighting, 4k",
+      "duration": 6,
+      "motion": "slow"
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "fade_black"
+  }
+]

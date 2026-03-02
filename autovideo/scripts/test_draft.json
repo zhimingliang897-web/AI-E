@@ -1,0 +1,62 @@
+[
+  {
+    "id": "01_intro",
+    "text": "大家好，我是林艾尔。",
+    "visual": {
+      "type": "ai_image",
+      "prompt": "A friendly Chinese woman presenter smiling warmly, standing in a bright modern tech studio with soft blue lighting and subtle circuit-patterned background, high quality 3D realistic cartoon style, 16:9, pip_br composition",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "02_topic",
+    "text": "今天我们来聊聊AI。",
+    "visual": {
+      "type": "ai_image",
+      "prompt": "A glowing futuristic AI icon floating above a clean desk — stylized brain-shaped chip with gentle light pulses, surrounded by soft digital particles, high quality 3D realistic cartoon style, 16:9, pip_br composition",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "03_engagement",
+    "text": "这个东西，真的很有意思。如果你觉得不错，就点个赞吧。",
+    "visual": {
+      "type": "ai_image",
+      "prompt": "A cheerful 3D cartoon hand clicking a large, shiny 'like' button with thumbs-up icon, floating beside a friendly animated AI orb winking playfully, bright pastel tech-themed background, high quality 3D realistic cartoon style, 16:9, pip_br composition",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  }
+]

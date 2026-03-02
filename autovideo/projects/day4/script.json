@@ -1,0 +1,822 @@
+[
+  {
+    "id": "01_title",
+    "text": "",
+    "visual": {
+      "type": "title_card",
+      "prompt": "什么是生成式模型？ What Is a Generative Model?",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "fade_black"
+  },
+  {
+    "id": "02_intro_what",
+    "text": "什么是生成式模型？",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "核心定义",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "03_intro_trend",
+    "text": "大家都在聊大模型、AI画画，这背后的核心主角，其实叫生成式模型。",
+    "visual": {
+      "type": "ai_image",
+      "prompt": "High quality 3D realistic cartoon style: A glowing central brain icon labeled 'Generative Model', surrounded by floating icons — chat bubble (GPT), paintbrush (AI art), film strip (video gen), circuit board background, bright and clean",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "04_contrast_q",
+    "text": "这和以前的AI有什么区别？",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "新 vs 旧",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "05_discriminative",
+    "text": "以前的传统AI是个分类员，也就是判别式模型。",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/05_discriminative_icon.png",
+      "scene_class": null,
+      "fallback": "solid_bg"
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "06_discriminative_example",
+    "text": "你给它一万张图，它负责做条件概率 P(Y|X) 的填空题，找出哪张是猫。",
+    "visual": {
+      "type": "manim",
+      "prompt": "Animated diagram: Left side shows 10000 image thumbnails; right side shows a neural net with arrow labeled 'P(Y|X)', outputting 'Cat' with checkmark",
+      "source": null,
+      "scene_class": "AutoScene06",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "07_generative_role",
+    "text": "而生成式模型是个创作家。",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/07_generative_role_icon.png",
+      "scene_class": null,
+      "fallback": "solid_bg"
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "08_generative_principle",
+    "text": "它本质上是在破解海量数据背后的底层概率分布 P(X)，",
+    "visual": {
+      "type": "manim",
+      "prompt": "3D surface plot of probability density P(X) over data space, with glowing 'X' particles emerging from peaks",
+      "source": null,
+      "scene_class": "AutoScene08",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "09_generative_creation",
+    "text": "从而凭空创造世界上原本不存在的全新内容。",
+    "visual": {
+      "type": "ai_image",
+      "prompt": "High quality 3D realistic cartoon style: A hand drawing a glowing new object — e.g., a futuristic car or alien plant — out of pure light particles, on blank canvas, clean studio lighting",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "10_examples_gpt_doubao",
+    "text": "GPT根据你的问题生成答案，豆包根据提示词生成图片，",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/10_examples_gpt_doubao_icon.png",
+      "scene_class": null,
+      "fallback": "solid_bg"
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "11_examples_conclusion",
+    "text": "它们都叫生成式模型。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "统一命名",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "12_history_seed",
+    "text": "这个造物的梦想由来已久。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "梦想起源",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "13_history_eliza",
+    "text": "半个世纪前，科学家用隐马尔可夫模型处理语音；",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/13_history_eliza_icon.png",
+      "scene_class": null,
+      "fallback": "solid_bg"
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "14_history_eliza2",
+    "text": "第一个聊天机器人ELIZA甚至能模仿心理医生对话。",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/14_history_eliza2_icon.png",
+      "scene_class": null,
+      "fallback": "solid_bg"
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "15_awakening",
+    "text": "但这颗种子真正迎来视觉上的觉醒，源于AI掌握了精妙的生成法则。",
+    "visual": {
+      "type": "clipart",
+      "prompt": "High quality 3D realistic cartoon style: A seed sprouting into a glowing eye made of pixels and light beams, against soft gradient background",
+      "source": "assets/manual/15_awakening.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "16_vae_concept",
+    "text": "起初，这种法则是重建与博弈。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "重建 & 博弈",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "17_vae_explain",
+    "text": "变分自编码器VAE，把万千世界压缩进连续的隐空间，再采样重建新数据。",
+    "visual": {
+      "type": "manim",
+      "prompt": "Animated VAE pipeline: Input images → encoder → compact latent vector cloud → decoder → diverse reconstructed images",
+      "source": null,
+      "scene_class": "AutoScene17",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "18_gan_setup",
+    "text": "而生成对抗网络GAN更戏剧性：",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "GAN登场",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "19_gan_roles",
+    "text": "一个造假图的生成器，一个打假的判别器。",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/19_gan_roles_icon.png",
+      "scene_class": null,
+      "fallback": "solid_bg"
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "20_gan_result",
+    "text": "在无数次左右互搏中，机器学会了生成极度逼真的人脸。",
+    "visual": {
+      "type": "clipart",
+      "prompt": "High quality 3D realistic cartoon style: Two AI robots sparring — one holding a 'fake face' painting, the other holding a magnifying glass — sparks flying, clean tech background",
+      "source": "assets/manual/20_gan_result.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "21_transformer_unify",
+    "text": "真正让AI爆发式走向全能的，是一场底层架构大一统。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "架构统一",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "22_transformer_impact",
+    "text": "Transformer横空出世，彻底改变游戏规则。",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/22_transformer_impact_icon.png",
+      "scene_class": null,
+      "fallback": "solid_bg"
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "23_transformer_extensions",
+    "text": "它催生了GPT、LLaMA等大语言模型，",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/23_transformer_extensions_icon.png",
+      "scene_class": null,
+      "fallback": "solid_bg"
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "24_transformer_multimodal",
+    "text": "更跨界衍生出ViT，为多模态融合打下坚实地基。",
+    "visual": {
+      "type": "manim",
+      "prompt": "3D pyramid base labeled 'Transformer', supporting layers: text, image, audio icons — all connected with glowing links",
+      "source": null,
+      "scene_class": "AutoScene24",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "25_diffusion_revolution",
+    "text": "在这块基石之上，AI艺术迎来最具颠覆性的扩散革命。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "扩散革命",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "26_ddpm_philosophy",
+    "text": "去噪扩散模型DDPM带来一种反直觉哲学：加噪再去噪。",
+    "visual": {
+      "type": "manim",
+      "prompt": "Step-by-step animation: Clean image → progressive Gaussian noise addition → noisy blob → reverse denoising steps → restored image",
+      "source": null,
+      "scene_class": "AutoScene26",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "27_ddpm_advantage",
+    "text": "它先加噪至混沌，再训练模型像雕刻般逆向还原。",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/27_ddpm_advantage_icon.png",
+      "scene_class": null,
+      "fallback": "solid_bg"
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "28_ddpm_outperform",
+    "text": "这种毁灭中重生的技法，在图像质量上全面超越GAN。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "超越GAN",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "29_models_stable_midjourney",
+    "text": "直接催生了Stable Diffusion和Midjourney。",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/29_models_stable_midjourney_icon.png",
+      "scene_class": null,
+      "fallback": "solid_bg"
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "30_video_aspiration",
+    "text": "掌握静止画卷后，AI又将目光投向流动的时间。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "进军视频",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "31_dit_architecture",
+    "text": "得益于DiT等新架构，AI摒弃U-Net，",
+    "visual": {
+      "type": "manim",
+      "prompt": "Side-by-side comparison: U-Net (complex skip connections) vs DiT (grid of tokens + attention heads), with 'U-Net' crossed out",
+      "source": null,
+      "scene_class": "AutoScene31",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "32_dit_tokenization",
+    "text": "将视觉数据像文本一样切块处理。",
+    "visual": {
+      "type": "manim",
+      "prompt": "Image split into patches → each patch as token → fed into Transformer blocks like text tokens",
+      "source": null,
+      "scene_class": "AutoScene32",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "33_sora_veo_keling",
+    "text": "结合Transformer算力，成为Sora、Veo、可灵、Seedance的技术底座。",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/33_sora_veo_keling_icon.png",
+      "scene_class": null,
+      "fallback": "solid_bg"
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "34_flow_matching",
+    "text": "再加上流匹配等算法优化采样路径，",
+    "visual": {
+      "type": "manim",
+      "prompt": "Smooth curved trajectory (flow path) through latent space, replacing jagged diffusion steps",
+      "source": null,
+      "scene_class": "AutoScene34",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "35_video_breakthrough",
+    "text": "彻底解决长视频连贯性与高分辨率难题。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "视频突破",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "36_sora_demo",
+    "text": "以Sora为代表的大模型，让AI真正读懂物理运动规律。",
+    "visual": {
+      "type": "clipart",
+      "prompt": "High quality 3D realistic cartoon style: Sora logo shining above a cinematic scene — camera panning around a rotating globe with realistic clouds and ocean waves, physics arrows visible",
+      "source": "assets/manual/36_sora_demo.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "37_movie_generation",
+    "text": "一口气就能生成带复杂运镜的电影级高清大片。",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/37_movie_generation_icon.png",
+      "scene_class": null,
+      "fallback": "solid_bg"
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "38_native_multimodal",
+    "text": "从拼接外挂走向原生一体，",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "原生一体",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "39_human_like_multimodal",
+    "text": "生成式模型正在进化为真正的原生全模态。",
+    "visual": {
+      "type": "manim",
+      "prompt": "Human brain icon with three equal streams: text (speech bubble), image (camera), audio (waveform) — all feeding into single core",
+      "source": null,
+      "scene_class": "AutoScene39",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "40_reshape_industries",
+    "text": "它将像人类一样，同时自然地处理文本、图像和音频，",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "人类级处理",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "41_final_impact",
+    "text": "重塑从医疗、教育到创意产业的每一个角落。",
+    "visual": {
+      "type": "ai_image",
+      "prompt": "High quality 3D realistic cartoon style: Three floating spheres — medical cross, graduation cap, paint palette — all connected to central 'Generative AI' orb with glowing links",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "fade_black"
+  }
+]

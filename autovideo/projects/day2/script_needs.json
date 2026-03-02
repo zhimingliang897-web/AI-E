@@ -1,0 +1,63 @@
+{
+  "needs_list": [
+    {
+      "scene_id": "15_image_to_text",
+      "type": "clipart",
+      "filename": "assets/manual/15_image_to_text.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "16_vqa",
+      "type": "clipart",
+      "filename": "assets/manual/16_vqa.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "07_cat_recognition",
+      "type": "ai_video",
+      "filename": "assets/videos/07_cat_recognition.mp4",
+      "description": "[Prompt] A 3D cartoon cat suddenly emerges from a swirling pixel cloud, then winks and sits confidently on a glowing neural network diagram, smooth reveal animation, high quality 3D realistic cartoon style, cinematic lighting | Duration: 6s | Motion: medium",
+      "prompt": "A 3D cartoon cat suddenly emerges from a swirling pixel cloud, then winks and sits confidently on a glowing neural network diagram, smooth reveal animation, high quality 3D realistic cartoon style, cinematic lighting",
+      "duration": 6,
+      "motion": "medium",
+      "is_optional": false
+    },
+    {
+      "scene_id": "17_text_to_image",
+      "type": "ai_video",
+      "filename": "assets/videos/17_text_to_image.mp4",
+      "description": "[Prompt] A 3D cartoon artist typing ‘sunset over mountain lake’ on a holographic keyboard; words float up and transform into a vivid landscape painting in mid-air, brushstroke animation, warm cinematic lighting, high quality 3D realistic cartoon style | Duration: 7s | Motion: slow",
+      "prompt": "A 3D cartoon artist typing ‘sunset over mountain lake’ on a holographic keyboard; words float up and transform into a vivid landscape painting in mid-air, brushstroke animation, warm cinematic lighting, high quality 3D realistic cartoon style",
+      "duration": 7,
+      "motion": "slow",
+      "is_optional": false
+    },
+    {
+      "scene_id": "03_pixel_world",
+      "type": "ai_image",
+      "filename": "assets/images/03_pixel_world.png",
+      "description": "[Prompt] A friendly 3D cartoon robot wearing glasses, holding a magnifying glass over a glowing pixel grid that transforms into a cat silhouette, bright clean tech lab background, high quality 3D realistic cartoon style, cinematic lighting, 4k",
+      "is_optional": true
+    },
+    {
+      "scene_id": "11_siloed_vs_unified",
+      "type": "ai_image",
+      "filename": "assets/images/11_siloed_vs_unified.png",
+      "description": "[Prompt] Two cartoon AI characters: left is a ‘text-only’ robot with ear but no eyes, right is ‘vision-only’ robot with eyes but no mouth; center shows unified AI with both eyes and mouth glowing, connected by golden neural bridge, vibrant tech background, high quality 3D realistic cartoon style",
+      "is_optional": true
+    },
+    {
+      "scene_id": "19_multimodal_whole",
+      "type": "ai_image",
+      "filename": "assets/images/19_multimodal_whole.png",
+      "description": "[Prompt] A single confident 3D cartoon AI humanoid with glowing eyes and speaking mouth, standing atop a fused vision+language symbol (eye + speech bubble merged), radiant light beam rising, futuristic studio backdrop, high quality 3D realistic cartoon style, cinematic lighting, 4k",
+      "is_optional": true
+    }
+  ],
+  "summary": "共20个场景，AI视频2个，AI生图3张，需要你准备4项素材",
+  "ai_image_count": 3,
+  "ai_video_count": 2,
+  "visual_mode": "video"
+}

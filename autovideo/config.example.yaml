@@ -1,0 +1,81 @@
+# AutoVideo 配置文件 v2
+# 复制为 config.yaml 并填入你的 API Key
+
+# === LLM (导演 AI，用于生成脚本 + 需求清单) ===
+llm:
+  enabled: true
+  provider: "qwen"
+  api_key: "sk-your-key-here"
+  base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+  model: "deepseek-v3.1"
+
+# === AI 图片生成 (贵！LLM 导演会控制用量) ===
+image_gen:
+  enabled: true
+  provider: "dashscope"
+  api_key: "sk-your-key-here"
+  base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+  model: "wan2.6-t2i"
+  max_calls: 50                  # 调用次数上限
+
+# === TTS 配音 ===
+tts:
+  enabled: true                  # false = 用户自己录音 / 使用 avatar 音频
+  voice: "zh-CN-YunxiNeural"    # 微软云雀男声
+  rate: "+0%"
+  pitch: "+0Hz"
+
+# === RVC 变声 (可选) ===
+rvc:
+  enabled: false
+  api_url: "http://127.0.0.1:7897"
+  model_name: "my_voice"
+
+# === Manim 数学动画 (可选) ===
+manim:
+  enabled: true
+  quality: "m"                   # l=480p / m=720p / h=1080p / k=4K
+
+# === Avatar 动画小人 (v2 新增) ===
+avatar:
+  enabled: false
+  video_path: ""                 # 完整 avatar 视频路径 (plan 阶段可通过 --avatar 指定)
+  audio_path: ""                 # avatar 配套音频路径
+  default_mode: "pip_br"         # 默认布局: pip_br/pip_bl/fullscreen/hidden
+  default_scale: 0.3             # 画中画缩放
+  margin: 20                     # 画中画边距(px)
+
+# === 字幕 (v2 新增，烧入视频) ===
+subtitle:
+  enabled: true
+  font: "Microsoft-YaHei"       # 中文字体
+  font_size: 36                  # 1080p 推荐
+  title_font_size: 64            # 章节标题推荐
+  color: "white"
+  bg_color: "black"
+  bg_opacity: 0.55               # 底条透明度
+
+# === 视频输出参数 ===
+video:
+  width: 1920
+  height: 1080
+  fps: 30
+  codec: "libx264"
+  transition: "crossfade"        # crossfade / fade_black / cut
+  transition_duration: 0.5       # 转场时长(秒)
+  default_duration: 2.5
+  default_title_duration: 3.0
+  default_solid_bg_duration: 2.5
+
+visual:
+  image_motion: "subtle"
+  ken_burns_zoom: 0.06
+  ken_burns_pan: 0.35
+  ken_burns_pre_scale: 1.18
+  ken_burns_directions: "cardinal"
+
+# === 路径 ===
+paths:
+  assets: "assets"
+  output: "output"
+  scripts: "scripts"

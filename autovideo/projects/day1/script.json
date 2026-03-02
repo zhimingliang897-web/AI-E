@@ -1,0 +1,402 @@
+[
+  {
+    "id": "01_title",
+    "text": "",
+    "visual": {
+      "type": "title_card",
+      "prompt": "什么是大语言模型？ What Is a Large Language Model?",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "fade_black"
+  },
+  {
+    "id": "02_intro_name",
+    "text": "首先，我们来搞清楚主角的名字：",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "主角登场",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "03_llm_fullname",
+    "text": "大语言模型，英文叫 Large Language Model，简称 LLM。",
+    "visual": {
+      "type": "manim",
+      "prompt": "Clean 3D cartoon-style text: 'Large Language Model (LLM)' with glowing underline and subtle zoom-in effect",
+      "source": null,
+      "scene_class": "TextFormulaAnimation",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "04_llm_examples_global",
+    "text": "不管是你每天用的通义千问、豆包、文心一言，",
+    "visual": {
+      "type": "ai_image",
+      "prompt": "High quality 3D realistic cartoon style, clean UI icons floating on light background: Qwen logo, Doubao logo, ERNIE Bot logo — all modern, friendly, tech-themed, bright and easy to understand",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "05_llm_examples_intl",
+    "text": "还是 ChatGPT、Gemini，它们皮囊不同，但灵魂都是 LLM。",
+    "visual": {
+      "type": "ai_image",
+      "prompt": "High quality 3D realistic cartoon style, clean UI icons floating on light background: ChatGPT logo, Gemini logo — side-by-side with Qwen/Doubao/ERNIE from previous scene, all equally styled, unified color palette, friendly tech vibe",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "06_what_is_lm",
+    "text": "那有人会问：什么是语言模型？",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "什么是语言模型？",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "07_lm_as_math",
+    "text": "之所以叫‘模型’，是因为它在做一件数学上的事：对人类语言的规律进行数学建模。",
+    "visual": {
+      "type": "manim",
+      "prompt": "3D cartoon-style diagram: left side shows speech bubbles with Chinese words; right side shows abstract probability curves and Greek letter 'P' with subscript 'w', connected by an arrow labeled 'mathematical modeling'",
+      "source": null,
+      "scene_class": "MathModelingDiagram",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "08_lm_analogy",
+    "text": "这就好比物理公式模拟抛物线，语言模型是在模拟说话的概率。",
+    "visual": {
+      "type": "manim",
+      "prompt": "Split-screen 3D cartoon: left shows parabola trajectory with 'y = ax²+bx+c'; right shows word sequence '今天 → 天气 → 很 → 好' with rising probability bars — both labeled 'modeling reality'",
+      "source": null,
+      "scene_class": "PhysicsVsLMAnalogy",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "09_why_large",
+    "text": "为什么非要加个‘大’字？其实很简单：只要它够大，就是大语言模型。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "为什么叫‘大’？",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "10_parameters_explained",
+    "text": "这个‘大’指的是参数量，英文叫 Parameters。",
+    "visual": {
+      "type": "manim",
+      "prompt": "3D cartoon-style floating text: 'Parameters' with gear icon, plus numeric scale showing '1B → 10B → 100B → 1T' with glowing arrows",
+      "source": null,
+      "scene_class": "ParametersLabel",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "11_parameters_scale",
+    "text": "它们通常包含数十亿甚至数万亿个参数。",
+    "visual": {
+      "type": "manim",
+      "prompt": "3D cartoon-style visual: human brain icon next to digital 'neuron network' icon, both labeled with '100B+ connections', with sparkles and zoom effect",
+      "source": null,
+      "scene_class": "ScaleComparison",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "12_emergence_metaphor",
+    "text": "你可以把它想象成大脑里天文数字般的神经连接——正是这种暴力美学的规模，才涌现出了智能。",
+    "visual": {
+      "type": "ai_image",
+      "prompt": "High quality 3D realistic cartoon style, glowing neural network inside a human head silhouette, with stars and 'EMERGENCE' in soft light — bright, clean, awe-inspiring but not sci-fi cliché",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "13_next_token_core",
+    "text": "它的工作本质上只有一件事——预测下一个字，也就是 Next Token Prediction。",
+    "visual": {
+      "type": "manim",
+      "prompt": "3D cartoon-style animation: input box says '我爱', then animated gears spin, then output box lights up with '你' + probability '99%' — all clean, labeled clearly",
+      "source": null,
+      "scene_class": "NextTokenPrediction",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "14_next_token_example",
+    "text": "举个例子：当你输入‘我爱’，模型经过疯狂计算，发现后面接‘你’的概率是 99%，接‘吃’的概率是 0.1%。",
+    "visual": {
+      "type": "manim",
+      "prompt": "3D cartoon bar chart: two bars — '你': 99% (tall, green), '吃': 0.1% (tiny, gray); input '我爱' shown above, with calculation sparks",
+      "source": null,
+      "scene_class": "ProbabilityBarChart",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "15_next_token_output",
+    "text": "于是它自信地输出了——‘你’。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "→ 你",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "16_human_language_summary",
+    "text": "说人话就是：LLM 是专门解决自然语言问题的专家。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "LLM = 语言专家",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "17_text_only_limitation",
+    "text": "在最基础的定义里，它只懂文字。",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/17_text_only.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "18_no_vision_audio",
+    "text": "它本质上看不懂图片，也听不懂视频，它处理的是纯粹的文本信息流。",
+    "visual": {
+      "type": "manim",
+      "prompt": "3D cartoon-style 'text-only zone' signboard with crossed-out camera and speaker icons, central 'ABC' glowing text stream",
+      "source": null,
+      "scene_class": "TextOnlyBoundary",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "19_multimodal_hint",
+    "text": "这时候，小伙伴们肯定想到了：既然有处理文字的语言模型，那是不是也有处理图片的视觉模型？",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "视觉模型？",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "20_multimodal_confirmation",
+    "text": "没错！甚至还有把它们合体的多模态模型。",
+    "visual": {
+      "type": "manim",
+      "prompt": "3D cartoon-style fusion: left 'text' icon, right 'image' icon, center 'multimodal' badge with connecting glow lines and '+' symbol",
+      "source": null,
+      "scene_class": "MultimodalFusion",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "fade_black"
+  }
+]

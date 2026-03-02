@@ -1,0 +1,18 @@
+{
+  "needs_list": [
+    {
+      "scene_id": "03_assets",
+      "type": "ai_video",
+      "filename": "assets/videos/03_assets.mp4",
+      "description": "[Prompt] A cinematic 4K close-up of a glowing folder named 'assets' opening smoothly to reveal perfectly linked image and video files with golden connection lines pulsing gently, high quality 3D realistic cartoon style, cinematic lighting | Duration: 6s | Motion: slow",
+      "prompt": "A cinematic 4K close-up of a glowing folder named 'assets' opening smoothly to reveal perfectly linked image and video files with golden connection lines pulsing gently, high quality 3D realistic cartoon style, cinematic lighting",
+      "duration": 6,
+      "motion": "slow",
+      "is_optional": false
+    }
+  ],
+  "summary": "共3个场景，AI视频1个，AI生图0张，需要你准备1项素材",
+  "ai_image_count": 0,
+  "ai_video_count": 1,
+  "visual_mode": "video"
+}

@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+media/
+output/
+audio/
+*.log
+output/test_*.mp4
+output/test_*.srt
+output/temp-audio.m4a
+projects/*/debug_llm_response*.txt
+projects/*/output/temp-audio.m4a

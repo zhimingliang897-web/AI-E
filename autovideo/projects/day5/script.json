@@ -1,0 +1,922 @@
+[
+  {
+    "id": "01_title",
+    "text": "",
+    "visual": {
+      "type": "title_card",
+      "prompt": "什么是 Function Calling？ What is Function Calling?",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "fade_black"
+  },
+  {
+    "id": "02_intro",
+    "text": "什么是 Function Calling，也就是函数调用？",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "函数调用定义",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "03_ecosystem",
+    "text": "在当前主流语言模型生态中，它是一项极其关键的核心能力。",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/03_ecosystem.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "04_breakthrough",
+    "text": "它让 AI 突破了只能生成文本的限制。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "突破文本限制",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "05_structured_output",
+    "text": "通过输出结构化数据，比如 JSON，来驱动外部工具、API 或本地脚本。",
+    "visual": {
+      "type": "manim",
+      "prompt": "Show a clean flow: LLM → JSON box → external API icon → return arrow",
+      "source": null,
+      "scene_class": "FunctionCallingFlow",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "06_real_world_action",
+    "text": "从而让 AI 能获取实时信息，或执行具体任务。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "实时 + 执行",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "07_part1_title",
+    "text": "",
+    "visual": {
+      "type": "title_card",
+      "prompt": "第一部分：核心工作流程 Part 1: Core Workflow",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "fade_black"
+  },
+  {
+    "id": "08_loop_analogy",
+    "text": "整个过程可以理解为——AI 思考、系统执行、AI 总结的闭环。",
+    "visual": {
+      "type": "manim",
+      "prompt": "Circular diagram with three labeled nodes: 'AI thinks' → 'System runs' → 'AI summarizes' → back to start",
+      "source": null,
+      "scene_class": "FeedbackLoop",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "09_step1_define",
+    "text": "第一步：定义工具。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "① 定义工具",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "10_step1_schema",
+    "text": "开发者需用 JSON Schema，向模型清晰描述函数名、功能和参数要求。",
+    "visual": {
+      "type": "image",
+      "prompt": null,
+      "source": "assets/manual/10_schema_example.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "11_step2_query",
+    "text": "第二步：用户提问。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "② 用户提问",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "12_step2_example",
+    "text": "比如：帮我查一下北京现在的温度。",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/12_user_query.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "13_step3_decision",
+    "text": "第三步：AI 决策。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "③ AI 决策",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "14_step3_json_output",
+    "text": "模型判断问题需调用天气工具，于是输出结构化 JSON。",
+    "visual": {
+      "type": "manim",
+      "prompt": "LLM output box containing: {\"name\": \"get_weather\", \"arguments\": {\"city\": \"Beijing\"}}",
+      "source": null,
+      "scene_class": "JsonOutputDemo",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "15_step4_execute",
+    "text": "第四步：系统执行与最终回复。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "④ 执行与回复",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "16_step4_flow",
+    "text": "后端拦截 JSON，调用真实天气 API，再把结果传回模型。",
+    "visual": {
+      "type": "manim",
+      "prompt": "Two-way flow: LLM → JSON → Python script → Weather API → response → LLM → natural language reply",
+      "source": null,
+      "scene_class": "ExecutionFlow",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "17_step4_reply",
+    "text": "模型整合信息，用自然语言回复：北京现在的气温是 25 摄氏度。",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/17_final_reply.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "18_part2_title",
+    "text": "",
+    "visual": {
+      "type": "title_card",
+      "prompt": "第二部分：模型为何具备这种能力？ Part 2: Why Can Models Do This?",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "fade_black"
+  },
+  {
+    "id": "19_two_reasons",
+    "text": "主流大模型能精准调用函数，主要靠两点。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "两大原因",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "20_reason1_finetune",
+    "text": "一是针对性微调。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "① 微调训练",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "21_reason1_data",
+    "text": "模型出厂前，学过海量‘指令-函数-结果’的数据对。",
+    "visual": {
+      "type": "manim",
+      "prompt": "Three-column dataset: 'User query' → 'Tool name & schema' → 'JSON output'",
+      "source": null,
+      "scene_class": "TrainingDataExample",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "22_reason1_instinct",
+    "text": "通过强化学习，它形成了‘逻辑触发’本能。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "逻辑触发本能",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "23_reason2_context",
+    "text": "二是上下文注入。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "② 上下文注入",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "24_reason2_system_prompt",
+    "text": "工具定义会被转成特殊系统提示词，强制模型遵守格式约束。",
+    "visual": {
+      "type": "manim",
+      "prompt": "System prompt box with highlighted constraint: 'You MUST output ONLY valid JSON'",
+      "source": null,
+      "scene_class": "SystemPromptConstraint",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "25_part3_title",
+    "text": "",
+    "visual": {
+      "type": "title_card",
+      "prompt": "第三部分：函数定义的规范——JSON Schema Part 3: JSON Schema Standard",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "fade_black"
+  },
+  {
+    "id": "26_schema_must",
+    "text": "开发者不能随口描述工具，必须使用 JSON Schema 这一工业标准。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "必须用 JSON Schema",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "27_schema_three_parts",
+    "text": "它像一份精确说明书，规定三个要素。",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/27_schema_parts.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "28_schema_type",
+    "text": "首先是类型：参数是字符串、数字，还是布尔值？",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "类型：string/number/bool",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "29_schema_description",
+    "text": "其次是描述：这个参数具体代表什么意思？",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "描述：语义说明",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "30_schema_required",
+    "text": "最后是必填项：哪些参数必须提供？",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "必填项：required",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "31_part4_title",
+    "text": "",
+    "visual": {
+      "type": "title_card",
+      "prompt": "第四部分：三道防线——如何确保调用不出错？ Part 4: Three Safeguards",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "fade_black"
+  },
+  {
+    "id": "32_safeguards_intro",
+    "text": "即便模型很聪明，幻觉或格式错误仍可能发生。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "风险存在",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "33_guard1_validate",
+    "text": "第一道防线：严格验证。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "① 严格验证",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "34_guard1_pydantic",
+    "text": "程序收到 JSON 后，立即用 Pydantic 做类型检查。",
+    "visual": {
+      "type": "image",
+      "prompt": null,
+      "source": "assets/manual/34_pydantic_check.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "35_guard1_prevent",
+    "text": "确认括号闭合、参数拼写正确、类型匹配，提前拦截非法请求。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "拦截非法请求",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "36_guard2_self_heal",
+    "text": "第二道防线：自愈循环。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "② 自愈循环",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "37_guard2_error_feedback",
+    "text": "如果验证失败，系统把报错原封不动发还给 AI。",
+    "visual": {
+      "type": "manim",
+      "prompt": "Error message bubble: 'Missing required parameter: city' → sent back to LLM",
+      "source": null,
+      "scene_class": "SelfHealFeedback",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "38_guard2_retry_success",
+    "text": "利用 AI 的上下文理解能力自我纠错，重试成功率接近百分之百。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "重试即成功",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "39_guard3_prompt_engineering",
+    "text": "第三道防线：提示词工程。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "③ 提示词工程",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "40_guard3_examples",
+    "text": "一方面，在函数描述中加入几个正确范例。",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/40_examples.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "41_guard3_detailed_desc",
+    "text": "另一方面，把描述写得极其详尽。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "详尽描述",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "42_guard3_precise_example",
+    "text": "比如：获取中国主要城市的实时气温，参数必须用中文城市名称。",
+    "visual": {
+      "type": "image",
+      "prompt": null,
+      "source": "assets/manual/42_precise_desc.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "43_summary_title",
+    "text": "",
+    "visual": {
+      "type": "title_card",
+      "prompt": "总结 Summary",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "fade_black"
+  },
+  {
+    "id": "44_summary_core",
+    "text": "Function Calling 并不是 AI 真的跑去运行代码。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "不是真执行",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "45_summary_instruction_set",
+    "text": "而是 AI 的大脑生成了运行代码所必需的指令集。",
+    "visual": {
+      "type": "manim",
+      "prompt": "Brain icon emitting JSON instruction set → code execution engine",
+      "source": null,
+      "scene_class": "InstructionSetGeneration",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "46_summary_evolution",
+    "text": "正是这项技术，让大语言模型从聊天机器人，进化为操作系统内核。",
+    "visual": {
+      "type": "ai_image",
+      "prompt": "High quality 3D realistic cartoon style: A friendly AI brain wearing a tiny OS kernel badge, standing on top of gears and code brackets, bright and clean, easy to understand",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  }
+]

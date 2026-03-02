@@ -1,0 +1,161 @@
+{
+  "needs_list": [
+    {
+      "scene_id": "05_discriminative",
+      "type": "clipart",
+      "filename": "assets/manual/05_discriminative.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "07_generative_role",
+      "type": "clipart",
+      "filename": "assets/manual/07_generative_role.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "10_examples_gpt_doubao",
+      "type": "clipart",
+      "filename": "assets/manual/10_examples_gpt_doubao.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "13_history_eliza",
+      "type": "clipart",
+      "filename": "assets/manual/13_history_eliza.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "14_history_eliza2",
+      "type": "clipart",
+      "filename": "assets/manual/14_history_eliza2.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "19_gan_roles",
+      "type": "clipart",
+      "filename": "assets/manual/19_gan_roles.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "22_transformer_impact",
+      "type": "clipart",
+      "filename": "assets/manual/22_transformer_impact.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "23_transformer_extensions",
+      "type": "clipart",
+      "filename": "assets/manual/23_transformer_extensions.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "24_transformer_multimodal",
+      "type": "clipart",
+      "filename": "assets/manual/24_transformer_multimodal.png",
+      "description": "需要一张表示多模态融合的插画，关键词：multimodal AI, text image audio icons, unified transformer base"
+    },
+    {
+      "scene_id": "27_ddpm_advantage",
+      "type": "clipart",
+      "filename": "assets/manual/27_ddpm_advantage.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "29_models_stable_midjourney",
+      "type": "clipart",
+      "filename": "assets/manual/29_models_stable_midjourney.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "33_sora_veo_keling",
+      "type": "clipart",
+      "filename": "assets/manual/33_sora_veo_keling.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "37_movie_generation",
+      "type": "clipart",
+      "filename": "assets/manual/37_movie_generation.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "03_intro_trend",
+      "type": "ai_image",
+      "filename": "assets/images/03_intro_trend.png",
+      "description": "[Prompt] High quality 3D realistic cartoon style: A glowing central brain icon labeled 'Generative Model', surrounded by floating icons — chat bubble (GPT), paintbrush (AI art), film strip (video gen), circuit board background, bright and clean",
+      "is_optional": true
+    },
+    {
+      "scene_id": "09_generative_creation",
+      "type": "ai_image",
+      "filename": "assets/images/09_generative_creation.png",
+      "description": "[Prompt] High quality 3D realistic cartoon style: A hand drawing a glowing new object — e.g., a futuristic car or alien plant — out of pure light particles, on blank canvas, clean studio lighting",
+      "is_optional": true
+    },
+    {
+      "scene_id": "15_awakening",
+      "type": "ai_image",
+      "filename": "assets/images/15_awakening.png",
+      "description": "[Prompt] High quality 3D realistic cartoon style: A seed sprouting into a glowing eye made of pixels and light beams, against soft gradient background",
+      "is_optional": true
+    },
+    {
+      "scene_id": "20_gan_result",
+      "type": "ai_image",
+      "filename": "assets/images/20_gan_result.png",
+      "description": "[Prompt] High quality 3D realistic cartoon style: Two AI robots sparring — one holding a 'fake face' painting, the other holding a magnifying glass — sparks flying, clean tech background",
+      "is_optional": true
+    },
+    {
+      "scene_id": "36_sora_demo",
+      "type": "ai_image",
+      "filename": "assets/images/36_sora_demo.png",
+      "description": "[Prompt] High quality 3D realistic cartoon style: Sora logo shining above a cinematic scene — camera panning around a rotating globe with realistic clouds and ocean waves, physics arrows visible",
+      "is_optional": true
+    },
+    {
+      "scene_id": "41_final_impact",
+      "type": "ai_image",
+      "filename": "assets/images/41_final_impact.png",
+      "description": "[Prompt] High quality 3D realistic cartoon style: Three floating spheres — medical cross, graduation cap, paint palette — all connected to central 'Generative AI' orb with glowing links",
+      "is_optional": true
+    },
+    {
+      "scene_id": "15_awakening",
+      "type": "clipart",
+      "filename": "assets/manual/15_awakening.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "20_gan_result",
+      "type": "clipart",
+      "filename": "assets/manual/20_gan_result.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "36_sora_demo",
+      "type": "clipart",
+      "filename": "assets/manual/36_sora_demo.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    }
+  ],
+  "summary": "共41个场景，需要AI生图3张，需要你准备16项素材",
+  "ai_image_count": 3,
+  "ai_video_count": 0,
+  "visual_mode": "image"
+}

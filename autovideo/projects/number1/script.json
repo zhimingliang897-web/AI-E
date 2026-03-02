@@ -1,0 +1,506 @@
+[
+  {
+    "id": "01_title",
+    "text": "",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "什么是大语言模型？",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "fade_black"
+  },
+  {
+    "id": "02_intro_name",
+    "text": "什么是大语言模型？",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "定义 = LLM",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "03_fullname",
+    "text": "首先，我们来搞清楚主角的名字：",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "主角登场",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "04_llm_def",
+    "text": "大语言模型，英文叫 Large Language Model，简称 LLM。",
+    "visual": {
+      "type": "manim",
+      "prompt": "Animated text reveal: 'Large Language Model' → 'LLM' with glowing connection line, clean tech font, dark background",
+      "source": null,
+      "scene_class": "LLMNameReveal",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "05_examples",
+    "text": "不管是你每天用的 ChatGPT、Gemini，还是国内的通义千问、豆包、文心一言——",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/05_examples.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "06_soul_same",
+    "text": "它们皮囊不同，但灵魂都是 LLM。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "皮囊 ≠ 灵魂",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "07_why_large",
+    "text": "为什么非要加个‘大’字？",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "为什么是‘大’？",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "08_simple_answer",
+    "text": "其实很简单：只要它够大，就是大语言模型。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "规模即定义",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "09_parameters",
+    "text": "这个‘大’指的是参数量，英文叫 Parameters。",
+    "visual": {
+      "type": "manim",
+      "prompt": "Animated zoom into neural network node labeled 'Parameter', then explode into floating numbers: 10B, 100B, 1T, cinematic lighting",
+      "source": null,
+      "scene_class": "ParameterScale",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "10_billion_trillion",
+    "text": "它们通常包含数十亿甚至数万亿个参数。",
+    "visual": {
+      "type": "ai_image",
+      "prompt": "Ultra-detailed digital art of a colossal neural network glowing inside a cosmic brain, numbers like '10B' and '1T' orbiting like planets, cinematic lighting, 4k, volumetric fog",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "11_brain_analogy",
+    "text": "你可以把它想象成大脑里天文数字般的神经连接——",
+    "visual": {
+      "type": "ai_video",
+      "prompt": "Macro time-lapse of glowing synaptic connections firing across a translucent human brain, golden light pulses traveling at neural speed, ultra-detailed, cinematic, shallow depth of field",
+      "source": "assets/videos/11_brain_analogy.mp4",
+      "scene_class": null,
+      "fallback": "ai_image::Synaptic network in human brain, golden light pulses, translucent tissue, cinematic lighting, 4k, detailed",
+      "duration": 6,
+      "motion": "medium"
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "fade_black"
+  },
+  {
+    "id": "12_emergence",
+    "text": "正是这种暴力美学的规模，才涌现出了智能。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "涌现 = 智能",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "13_language_model_q",
+    "text": "那有人会问：什么是语言模型？",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "语言模型？",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "14_math_modeling",
+    "text": "之所以叫‘模型’，是因为它在做一件数学上的事：对人类语言的规律进行数学建模。",
+    "visual": {
+      "type": "manim",
+      "prompt": "Animated equation: P(word|context) = softmax(W·h + b), with flowing text tokens entering left and probability distribution bar chart emerging right",
+      "source": null,
+      "scene_class": "LanguageModelEquation",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "15_physics_analogy",
+    "text": "这就好比物理公式模拟抛物线，语言模型是在模拟说话的概率。",
+    "visual": {
+      "type": "manim",
+      "prompt": "Split screen: left — cannonball trajectory with y = -x² equation; right — word cloud 'hello world' with probability heatmap under 'world', smooth animation",
+      "source": null,
+      "scene_class": "PhysicsVsLanguage",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "16_next_token",
+    "text": "它的工作本质上只有一件事——预测下一个字，也就是 Next Token Prediction。",
+    "visual": {
+      "type": "manim",
+      "prompt": "Animated token stream: [I] [love] [→ ?] → [you] highlighted with 99% confidence badge, clean UI, dark tech background",
+      "source": null,
+      "scene_class": "NextTokenPrediction",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "17_example_input",
+    "text": "举个例子：当你输入‘我爱’，",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "输入：我爱",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "18_probability_calc",
+    "text": "模型经过疯狂计算，发现后面接‘你’的概率是 99%，接‘吃’的概率是 0.1%。",
+    "visual": {
+      "type": "manim",
+      "prompt": "Bar chart animating: '你' → 99% (green), '吃' → 0.1% (red), '睡' → 0.05%, all labels with Chinese characters, smooth growth",
+      "source": null,
+      "scene_class": "ProbabilityDistribution",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "19_output_confident",
+    "text": "于是它自信地输出了——‘你’。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "输出：你",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "20_human_translation",
+    "text": "说人话就是：LLM 是专门解决自然语言问题的专家。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "专家 = NLP",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "21_text_only",
+    "text": "在最基础的定义里，它只懂文字。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "纯文本输入",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "22_no_vision_audio",
+    "text": "它本质上看不懂图片，也听不懂视频，它处理的是纯粹的文本信息流。",
+    "visual": {
+      "type": "manim",
+      "prompt": "Three icons fading in: 📷 (crossed out), 🎧 (crossed out), ✅📝 (glowing); then animated stream of ASCII chars flowing left-to-right",
+      "source": null,
+      "scene_class": "TextOnlyFlow",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "23_multimodal_hint",
+    "text": "这时候，小伙伴们肯定想到了：既然有处理文字的语言模型，",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "文字 → 图片？声音？",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "24_multimodal_reveal",
+    "text": "那是不是也有处理图片的视觉模型？处理声音的听觉模型？",
+    "visual": {
+      "type": "ai_image",
+      "prompt": "Triptych digital art: left — abstract eye made of pixels, center — ear formed from soundwaves, right — brain with text+image+audio icons merging, cinematic lighting, 4k",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "25_multimodal_climax",
+    "text": "没错！甚至还有把它们合体的多模态模型。",
+    "visual": {
+      "type": "ai_video",
+      "prompt": "Slow-motion fusion sequence: pixel eye + soundwave ear + text stream collide at center, burst into radiant multi-icon orb (🖼️🎧📝🌐), lens flare, cinematic color grading",
+      "source": "assets/videos/25_multimodal_climax.mp4",
+      "scene_class": null,
+      "fallback": "ai_image::Multi-modal fusion orb with image, audio, text, web icons radiating light, digital art, cinematic lighting, 4k",
+      "duration": 7,
+      "motion": "slow"
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "fade_black"
+  }
+]

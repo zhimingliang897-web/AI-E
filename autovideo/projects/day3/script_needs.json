@@ -1,0 +1,63 @@
+{
+  "needs_list": [
+    {
+      "scene_id": "07_why_prompt",
+      "type": "clipart",
+      "filename": "assets/manual/07_why_prompt.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "20_bad_result",
+      "type": "clipart",
+      "filename": "assets/manual/20_bad_result.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "24_good_result",
+      "type": "clipart",
+      "filename": "assets/manual/24_good_result.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "08_actor_director",
+      "type": "ai_video",
+      "filename": "assets/videos/08_actor_director.mp4",
+      "description": "[Prompt] A high quality 3D realistic cartoon style theater stage: a confident human director points at a thoughtful robot actor on stage, spotlight follows the gesture, cinematic shallow depth of field, warm lighting | Duration: 6s | Motion: medium",
+      "prompt": "A high quality 3D realistic cartoon style theater stage: a confident human director points at a thoughtful robot actor on stage, spotlight follows the gesture, cinematic shallow depth of field, warm lighting",
+      "duration": 6,
+      "motion": "medium",
+      "is_optional": false
+    },
+    {
+      "scene_id": "22_good_prompt_detail",
+      "type": "ai_video",
+      "filename": "assets/videos/22_good_prompt_detail.mp4",
+      "description": "[Prompt] A high quality 3D realistic cartoon style sci-fi writing desk: holographic text '只会说谎的机器人' floats above keyboard, robot silhouette winks with sparkles, cinematic lens flare, smooth zoom-in | Duration: 7s | Motion: slow",
+      "prompt": "A high quality 3D realistic cartoon style sci-fi writing desk: holographic text '只会说谎的机器人' floats above keyboard, robot silhouette winks with sparkles, cinematic lens flare, smooth zoom-in",
+      "duration": 7,
+      "motion": "slow",
+      "is_optional": false
+    },
+    {
+      "scene_id": "04_def_prompt",
+      "type": "ai_image",
+      "filename": "assets/images/04_def_prompt.png",
+      "description": "[Prompt] A high quality 3D realistic cartoon style close-up of a glowing golden key labeled 'PROMPT' floating above an open book with light beams, bright clean studio lighting, cinematic composition",
+      "is_optional": true
+    },
+    {
+      "scene_id": "27_key_metaphor",
+      "type": "ai_image",
+      "filename": "assets/images/27_key_metaphor.png",
+      "description": "[Prompt] A high quality 3D realistic cartoon style golden key labeled 'PROMPT' turning inside a glowing AI-brain-shaped lock, light bursts on turn, cinematic lighting",
+      "is_optional": true
+    }
+  ],
+  "summary": "共29个场景，AI视频2个，AI生图2张，需要你准备5项素材",
+  "ai_image_count": 2,
+  "ai_video_count": 2,
+  "visual_mode": "video"
+}

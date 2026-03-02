@@ -1,0 +1,67 @@
+[
+  {
+    "id": "01_intro",
+    "text": "今天我们来学习 AI 时代最重要的概念：大语言模型。它是如何理解你说的话，又是如何生成回答的呢？",
+    "visual": {
+      "type": "ai_image",
+      "prompt": "A futuristic cyberpunk AI brain visualization, glowing neural network, dark background, cinematic lighting, 16:9",
+      "fallback": null
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    }
+  },
+  {
+    "id": "02_token",
+    "text": "首先，模型看不懂文字。它会把每个词，比如 Apple，变成一个数字 ID，这个过程叫做 Tokenization。",
+    "visual": {
+      "type": "manim",
+      "scene_class": "TokenizationScene",
+      "fallback": "assets/manual/tokenization.png"
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    }
+  },
+  {
+    "id": "03_logits",
+    "text": "模型输出的也不是文字，而是一个概率分布列表，叫做 Logits。概率最高的那个词，就是模型的预测结果。",
+    "visual": {
+      "type": "manim",
+      "scene_class": "LogitsScene",
+      "fallback": "assets/manual/logits.png"
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    }
+  },
+  {
+    "id": "04_attention",
+    "text": "那模型是怎么理解上下文的呢？答案是注意力机制。它让模型能关注到句子中最重要的部分。",
+    "visual": {
+      "type": "manim",
+      "scene_class": "AttentionScene",
+      "fallback": "assets/manual/attention.png"
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    }
+  },
+  {
+    "id": "05_outro",
+    "text": "这就是大语言模型的核心原理。下一期，我们会深入讲解 Transformer 架构。记得关注，我们下期见！",
+    "visual": {
+      "type": "ai_image",
+      "prompt": "Subscribe and follow, futuristic tech channel outro screen, neon blue and purple, minimalist design, 16:9",
+      "fallback": null
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    }
+  }
+]

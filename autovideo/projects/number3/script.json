@@ -1,0 +1,462 @@
+[
+  {
+    "id": "01_title",
+    "text": "",
+    "visual": {
+      "type": "title_card",
+      "prompt": "什么是 Prompt？ What is a Prompt?",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.2
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "fade_black"
+  },
+  {
+    "id": "02_def_intro",
+    "text": "在拥有了超级大脑和火眼金睛之后，AI 毕竟不是你肚子里的蛔虫，它需要一个指令来激活。",
+    "visual": {
+      "type": "ai_image",
+      "prompt": "A glowing futuristic brain connected to a digital eye, surrounded by dark space, waiting for a spark of activation, cinematic lighting, 4k, detailed abstract tech style",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "03_def_name",
+    "text": "这个指令，就叫 Prompt，中文通常翻译为“提示词”。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "Prompt = 提示词",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "cut"
+  },
+  {
+    "id": "04_def_bridge",
+    "text": "它是你输入给模型的一段文字，是你和 AI 交流的唯一桥梁。",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/04_def_bridge.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.2
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "05_def_simple",
+    "text": "简单来说：Prompt 就是你对 AI 发出的“命令”。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "Prompt = 命令",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "cut"
+  },
+  {
+    "id": "06_why_name",
+    "text": "为什么非要叫 Prompt？这个词在英语里有“提示、驱使”的意思。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "提示与驱使",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "07_metaphor_stage",
+    "text": "想象一下话剧舞台：AI 就是那个博学但容易忘词的演员，而你就是提词员。",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/07_metaphor_stage.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.2
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "08_metaphor_fail",
+    "text": "如果你不给它提示，它就愣在台上，或者开始胡言乱语。",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/08_metaphor_fail.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "cut"
+  },
+  {
+    "id": "09_metaphor_task",
+    "text": "你的任务，就是给它一个线索，引导它根据这个线索，通过概率计算，一步步把后面的台词演出来。",
+    "visual": {
+      "type": "manim",
+      "prompt": "Show a flowchart: Input 'Clue' -> Probability Tree narrowing down -> Output 'Script'. Highlight the path selection process.",
+      "source": null,
+      "scene_class": "ProbabilityFlow",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.2
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "10_quality_impact",
+    "text": "Prompt 的质量，直接决定了 AI 的表现。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "质量决定表现",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "cut"
+  },
+  {
+    "id": "11_gigo_rule",
+    "text": "这在计算机领域有个铁律：Garbage In, Garbage Out，也就是垃圾进，垃圾出。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "垃圾进，垃圾出",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "12_prob_machine",
+    "text": "大语言模型本质上是一个概率预测机。Prompt 的作用，就是框定这个概率的范围。",
+    "visual": {
+      "type": "manim",
+      "prompt": "Visualize a wide bell curve representing probability. Then show a box narrowing the curve to a specific peak labeled 'Prompt Constraint'.",
+      "source": null,
+      "scene_class": "ProbabilityConstraint",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.2
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "13_constraint_logic",
+    "text": "你给的约束越具体，它预测的路径就越精准；你给的指令越模糊，它就越容易放飞自我。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "具体=精准 / 模糊=失控",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "cut"
+  },
+  {
+    "id": "14_compare_intro",
+    "text": "我们来看个对比。先看一个烂 Prompt。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "案例对比：烂 Prompt",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "fade_black"
+  },
+  {
+    "id": "15_bad_input",
+    "text": "你输入：“写个故事。”AI 内心 OS：“写啥？给谁看？多长？悲剧喜剧？”",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/15_bad_input.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.2
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "16_bad_result",
+    "text": "结果：它给你吐出一篇像白开水一样的流水账。",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/16_bad_result.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "cut"
+  },
+  {
+    "id": "17_good_intro",
+    "text": "再看一个好 Prompt。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "案例对比：好 Prompt",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "fade_black"
+  },
+  {
+    "id": "18_good_input",
+    "text": "你输入：“你是一个获得雨果奖的科幻作家。请用海明威那种简洁有力的风格，写一个关于只会说谎的机器人的 300 字微小说，结局要反转。”",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/18_good_input.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.2
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "19_good_os",
+    "text": "AI 内心 OS：“懂了！角色、风格、题材、字数、结局，全都有了！”",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/19_good_os.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "cut"
+  },
+  {
+    "id": "20_good_result",
+    "text": "结果：它给你生成了一篇惊艳的短篇小说。",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/20_good_result.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.2
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "21_summary_lang",
+    "text": "说人话就是：Prompt 是 AI 时代的新编程语言。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "AI 时代新编程语言",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "cut"
+  },
+  {
+    "id": "22_summary_shift",
+    "text": "以前我们用 Python、C++ 指挥电脑；现在，我们用自然语言指挥 AI。",
+    "visual": {
+      "type": "manim",
+      "prompt": "Split screen animation: Left side shows lines of code (Python/C++) fading out. Right side shows chat bubbles with natural language appearing.",
+      "source": null,
+      "scene_class": "CodeToChat",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.2
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "23_summary_magic",
+    "text": "Prompt 就是你施展魔法的咒语。咒语念对了，AI 就是神；咒语念错了，AI 就是人工智障。",
+    "visual": {
+      "type": "ai_image",
+      "prompt": "Split composition: Left side a wizard casting a golden successful spell creating a majestic deity. Right side a clumsy wizard casting a broken purple spell creating a confused robot glitching. Cinematic, magical realism, 4k",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  }
+]

@@ -1,0 +1,344 @@
+[
+  {
+    "id": "01_title_act1",
+    "text": "",
+    "visual": {
+      "type": "title_card",
+      "prompt": "cinematic title screen: '第一幕：什么是生成式模型？', clean modern typography, dark tech background with subtle circuit patterns",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "fade_black"
+  },
+  {
+    "id": "02_cat_dog_machine",
+    "text": "",
+    "visual": {
+      "type": "image",
+      "prompt": "a robotic垃圾分类 machine with mechanical arm sorting cat and dog images on conveyor belt, top-left overlay: P(Y|X) formula glowing softly",
+      "source": "assets/manual/cat_dog.jpg",
+      "scene_class": null,
+      "fallback": null,
+      "effect": "头上闪烁公式 P(Y∣X)"
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "03_cyber_cat_brush",
+    "text": "",
+    "visual": {
+      "type": "image",
+      "prompt": "a magical brush drawing a cyberpunk cat from thin air — neon lights, chrome fur, glowing eyes, digital particles around stroke",
+      "source": "assets/manual/cyber_cat.png",
+      "scene_class": null,
+      "fallback": null,
+      "effect": "光效闪烁"
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "04_narration_01",
+    "text": "大家都在聊大模型、AI画画",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "dark gradient background with soft blue accent light, minimalist tech aesthetic",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "05_narration_02",
+    "text": "这背后的核心主角，其实叫生成式模型",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "dark gradient background with soft blue accent light, minimalist tech aesthetic",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "06_narration_03",
+    "text": "有人会问，这和以前的AI有什么区别？",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "dark gradient background with soft blue accent light, minimalist tech aesthetic",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "07_narration_04",
+    "text": "说人话：以前的传统AI是个分类员",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "dark gradient background with soft blue accent light, minimalist tech aesthetic",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "08_narration_05",
+    "text": "你给它一万张图，它负责做填空题",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "dark gradient background with soft blue accent light, minimalist tech aesthetic",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "09_narration_06",
+    "text": "找出哪张是猫",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "dark gradient background with soft blue accent light, minimalist tech aesthetic",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "10_narration_07",
+    "text": "而生成式模型是个创作家",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "dark gradient background with soft blue accent light, minimalist tech aesthetic",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "11_narration_08",
+    "text": "它破解数据背后的概率分布",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "dark gradient background with soft blue accent light, minimalist tech aesthetic",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "12_narration_09",
+    "text": "从而凭空捏造全新内容",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "dark gradient background with soft blue accent light, minimalist tech aesthetic",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "13_title_act2",
+    "text": "",
+    "visual": {
+      "type": "title_card",
+      "prompt": "cinematic title screen: '第二幕：大语言模型 LLM', clean modern typography, dark tech background with subtle neural network lines",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "fade_black"
+  },
+  {
+    "id": "14_llm_logos",
+    "text": "",
+    "visual": {
+      "type": "image",
+      "prompt": "collage of major LLM logos: ChatGPT, Gemini, Qwen, Doubao, clean white background, evenly spaced",
+      "source": "assets/manual/llm_logos.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "15_narration_10",
+    "text": "不管是你每天用的ChatGPT、Gemini",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "dark gradient background with soft blue accent light, minimalist tech aesthetic",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "16_narration_11",
+    "text": "还是国内的通义千问、豆包",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "dark gradient background with soft blue accent light, minimalist tech aesthetic",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "17_narration_12",
+    "text": "它们本质都是大语言模型",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "dark gradient background with soft blue accent light, minimalist tech aesthetic",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  }
+]

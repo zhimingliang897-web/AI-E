@@ -1,0 +1,76 @@
+{
+  "needs_list": [
+    {
+      "scene_id": "04_def_bridge",
+      "type": "clipart",
+      "filename": "assets/manual/04_def_bridge.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "07_metaphor_stage",
+      "type": "clipart",
+      "filename": "assets/manual/07_metaphor_stage.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "08_metaphor_fail",
+      "type": "clipart",
+      "filename": "assets/manual/08_metaphor_fail.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "15_bad_input",
+      "type": "clipart",
+      "filename": "assets/manual/15_bad_input.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "16_bad_result",
+      "type": "clipart",
+      "filename": "assets/manual/16_bad_result.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "18_good_input",
+      "type": "clipart",
+      "filename": "assets/manual/18_good_input.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "19_good_os",
+      "type": "clipart",
+      "filename": "assets/manual/19_good_os.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "20_good_result",
+      "type": "clipart",
+      "filename": "assets/manual/20_good_result.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "02_def_intro",
+      "type": "ai_image",
+      "filename": "assets/images/02_def_intro.png",
+      "description": "[Prompt] A glowing futuristic brain connected to a digital eye, surrounded by dark space, waiting for a spark of activation, cinematic lighting, 4k, detailed abstract tech style",
+      "is_optional": true
+    },
+    {
+      "scene_id": "23_summary_magic",
+      "type": "ai_image",
+      "filename": "assets/images/23_summary_magic.png",
+      "description": "[Prompt] Split composition: Left side a wizard casting a golden successful spell creating a majestic deity. Right side a clumsy wizard casting a broken purple spell creating a confused robot glitching. Cinematic, magical realism, 4k",
+      "is_optional": true
+    }
+  ],
+  "summary": "共23个场景，需要AI生图2张，需要你准备8项素材",
+  "ai_image_count": 2
+}

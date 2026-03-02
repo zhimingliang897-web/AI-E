@@ -1,0 +1,113 @@
+{
+  "needs_list": [
+    {
+      "scene_id": "03_ecosystem",
+      "type": "clipart",
+      "filename": "assets/manual/03_ecosystem.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "10_schema_example",
+      "type": "image",
+      "filename": "assets/manual/10_schema_example.png",
+      "description": "需要一张 JSON Schema 示例截图，关键词：JSON Schema, function definition, parameters example"
+    },
+    {
+      "scene_id": "12_user_query",
+      "type": "clipart",
+      "filename": "assets/manual/12_user_query.png",
+      "description": "需要一张用户提问场景插画，关键词：user query, chat bubble, temperature question"
+    },
+    {
+      "scene_id": "17_final_reply",
+      "type": "clipart",
+      "filename": "assets/manual/17_final_reply.png",
+      "description": "需要一张自然语言回复插画，关键词：AI reply, weather result, 25°C, Beijing"
+    },
+    {
+      "scene_id": "27_schema_parts",
+      "type": "clipart",
+      "filename": "assets/manual/27_schema_parts.png",
+      "description": "需要一张展示 JSON Schema 三要素的图示，关键词：JSON Schema parts, type description required, labeled diagram"
+    },
+    {
+      "scene_id": "34_pydantic_check",
+      "type": "image",
+      "filename": "assets/manual/34_pydantic_check.png",
+      "description": "需要一张 Pydantic 验证代码截图或示意图，关键词：Pydantic validation, JSON check, Python code"
+    },
+    {
+      "scene_id": "40_examples",
+      "type": "clipart",
+      "filename": "assets/manual/40_examples.png",
+      "description": "需要一张提示词中嵌入范例的插画，关键词：prompt examples, function calling demo, sample JSON"
+    },
+    {
+      "scene_id": "42_precise_desc",
+      "type": "image",
+      "filename": "assets/manual/42_precise_desc.png",
+      "description": "需要一张详尽函数描述的截图或设计稿，关键词：detailed function description, Chinese city names, weather API"
+    },
+    {
+      "scene_id": "10_step1_schema",
+      "type": "image",
+      "filename": "assets/manual/10_schema_example.png",
+      "description": "请准备与场景匹配的素材。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "12_step2_example",
+      "type": "clipart",
+      "filename": "assets/manual/12_user_query.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "17_step4_reply",
+      "type": "clipart",
+      "filename": "assets/manual/17_final_reply.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "27_schema_three_parts",
+      "type": "clipart",
+      "filename": "assets/manual/27_schema_parts.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "34_guard1_pydantic",
+      "type": "image",
+      "filename": "assets/manual/34_pydantic_check.png",
+      "description": "请准备与场景匹配的素材。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "40_guard3_examples",
+      "type": "clipart",
+      "filename": "assets/manual/40_examples.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "42_guard3_precise_example",
+      "type": "image",
+      "filename": "assets/manual/42_precise_desc.png",
+      "description": "请准备与场景匹配的素材。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "46_summary_evolution",
+      "type": "ai_image",
+      "filename": "assets/images/46_summary_evolution.png",
+      "description": "[Prompt] High quality 3D realistic cartoon style: A friendly AI brain wearing a tiny OS kernel badge, standing on top of gears and code brackets, bright and clean, easy to understand",
+      "is_optional": true
+    }
+  ],
+  "summary": "共46个场景，需要AI生图1张，需要你准备15项素材",
+  "ai_image_count": 1,
+  "ai_video_count": 0,
+  "visual_mode": "image"
+}

@@ -1,0 +1,406 @@
+[
+  {
+    "id": "01_title",
+    "text": "",
+    "visual": {
+      "type": "title_card",
+      "prompt": "什么是视觉模型与多模态？ What Are Vision & Multimodal Models?",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "fade_black"
+  },
+  {
+    "id": "02_intro_vision",
+    "text": "什么是视觉模型？",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "视觉模型 = 像素翻译官",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "03_pixel_world",
+    "text": "简单来说，它是像素世界的“翻译官”。",
+    "visual": {
+      "type": "ai_image",
+      "prompt": "A friendly 3D cartoon robot wearing glasses, holding a magnifying glass over a glowing pixel grid that transforms into a cat silhouette, bright clean tech lab background, high quality 3D realistic cartoon style, cinematic lighting, 4k",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "04_computer_sees",
+    "text": "在计算机眼中，图片并非风景，而是一堆冰冷的数字矩阵。",
+    "visual": {
+      "type": "manim",
+      "prompt": "Animated zoom into a photo → dissolves into RGB number grid (e.g., 255,0,0 / 0,128,64), with floating 'pixel' labels and binary pulses; clean vector aesthetic",
+      "source": null,
+      "scene_class": "PixelMatrixReveal",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "05_vision_task",
+    "text": "视觉模型的任务，就是从这些杂乱数字中抽丝剥茧。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "任务 = 抽丝剥茧",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "06_cnn_transformer",
+    "text": "无论是CNN，还是Transformer，都通过多层网络过滤，从线条、边缘，进化到识别形状与物体。",
+    "visual": {
+      "type": "manim",
+      "prompt": "Side-by-side animated layer progression: left shows CNN kernel sliding + edge detection → shape → object; right shows Transformer attention heatmap focusing on cat ears then whole cat; smooth transitions, labeled layers",
+      "source": null,
+      "scene_class": "VisionArchitectureEvolution",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "07_cat_recognition",
+    "text": "最终，它会笃定地告诉你：‘嘿，这堆数字代表的是一只猫。’",
+    "visual": {
+      "type": "ai_video",
+      "prompt": "A 3D cartoon cat suddenly emerges from a swirling pixel cloud, then winks and sits confidently on a glowing neural network diagram, smooth reveal animation, high quality 3D realistic cartoon style, cinematic lighting",
+      "source": "assets/videos/07_cat_recognition.mp4",
+      "scene_class": null,
+      "fallback": "ai_image::A confident 3D cartoon cat sitting on a glowing neural net diagram, pixel-to-cat transformation effect, bright clean studio lighting, high quality 3D realistic cartoon style, cinematic lighting, 4k",
+      "duration": 6,
+      "motion": "medium"
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "fade_black"
+  },
+  {
+    "id": "08_multimodal_intro",
+    "text": "提到多模态，绕不开CV与NLP这两座大山。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "CV × NLP = 多模态基石",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "09_cv_vs_nlp",
+    "text": "语言模型负责‘听话’与‘对话’，CV则要让AI真正‘看见’世界。",
+    "visual": {
+      "type": "manim",
+      "prompt": "Split-screen animation: left shows speech bubbles + text flowing into LLM brain icon; right shows camera lens focusing on photo → image features → ‘eye’ icon lighting up; icons sync pulse",
+      "source": null,
+      "scene_class": "CvNlpDualRole",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "10_vlm_emergence",
+    "text": "算力爆发催生了VLM——视觉语言模型，也就是多模态模型。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "VLM = 算力×融合",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "11_siloed_vs_unified",
+    "text": "过去AI是各司其职的‘偏科生’；多模态AI则打通了视觉与语言的任督二脉。",
+    "visual": {
+      "type": "ai_image",
+      "prompt": "Two cartoon AI characters: left is a ‘text-only’ robot with ear but no eyes, right is ‘vision-only’ robot with eyes but no mouth; center shows unified AI with both eyes and mouth glowing, connected by golden neural bridge, vibrant tech background, high quality 3D realistic cartoon style",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "12_what_makes_it_strong",
+    "text": "它到底强在哪？",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "核心优势 = 跨模态理解",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "13_cross_modal_logic",
+    "text": "它不再孤立处理像素，而是深刻理解画面与文字间的内在逻辑。",
+    "visual": {
+      "type": "manim",
+      "prompt": "Animated bidirectional arrow between photo and caption box; arrow pulses with ‘semantic link’ label; photo morphs to sketch → to text → to emoji → back to photo, seamless loop",
+      "source": null,
+      "scene_class": "CrossModalLink",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "14_three_capabilities",
+    "text": "它能由图生文、视觉问答、甚至文生图。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "三大能力：看→说→画",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "15_image_to_text",
+    "text": "丢给它一张风景照，它能瞬间生成朋友圈文案。",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/15_image_to_text.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "16_vqa",
+    "text": "你问‘穿红衣服的人在干什么？’它能精准捕捉细节并作答。",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/16_vqa.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "17_text_to_image",
+    "text": "你只需一句指令，它便能凭空构想出一幅画作。",
+    "visual": {
+      "type": "ai_video",
+      "prompt": "A 3D cartoon artist typing ‘sunset over mountain lake’ on a holographic keyboard; words float up and transform into a vivid landscape painting in mid-air, brushstroke animation, warm cinematic lighting, high quality 3D realistic cartoon style",
+      "source": "assets/videos/17_text_to_image.mp4",
+      "scene_class": null,
+      "fallback": "ai_image::A 3D cartoon artist creating a sunset mountain lake painting from floating text words, holographic interface, warm golden hour lighting, high quality 3D realistic cartoon style, cinematic lighting, 4k",
+      "duration": 7,
+      "motion": "slow"
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "fade_black"
+  },
+  {
+    "id": "18_synthesis_summary",
+    "text": "视觉模型给了AI眼睛，语言模型给了AI嘴巴。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "眼睛 + 嘴巴 = 感知闭环",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "19_multimodal_whole",
+    "text": "多模态模型，让AI进化成‘有眼有嘴、能看能说’的完整体。",
+    "visual": {
+      "type": "ai_image",
+      "prompt": "A single confident 3D cartoon AI humanoid with glowing eyes and speaking mouth, standing atop a fused vision+language symbol (eye + speech bubble merged), radiant light beam rising, futuristic studio backdrop, high quality 3D realistic cartoon style, cinematic lighting, 4k",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "20_prompt_bridge",
+    "text": "既然AI已具备观察与表达能力，我们该如何精准指挥它？这就引出了AI时代的‘通用编程语言’——提示词。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "提示词 = AI通用语言",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  }
+]

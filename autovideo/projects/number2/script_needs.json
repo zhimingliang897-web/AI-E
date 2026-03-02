@@ -1,0 +1,90 @@
+{
+  "needs_list": [
+    {
+      "scene_id": "02_intro_cv_nlp",
+      "type": "clipart",
+      "filename": "assets/manual/02_intro_cv_nlp.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "06_what_is_vision",
+      "type": "clipart",
+      "filename": "assets/manual/06_what_is_vision.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "10_feature_evolution",
+      "type": "clipart",
+      "filename": "assets/manual/10_feature_evolution.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "15_old_ai_silos",
+      "type": "clipart",
+      "filename": "assets/manual/15_old_ai_silos.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "18_img_to_text",
+      "type": "clipart",
+      "filename": "assets/manual/18_img_to_text.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "19_visual_qa",
+      "type": "clipart",
+      "filename": "assets/manual/19_visual_qa.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "20_text_to_img",
+      "type": "clipart",
+      "filename": "assets/manual/20_text_to_img.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "04_cv_goal",
+      "type": "ai_image",
+      "filename": "assets/images/04_cv_goal.png",
+      "description": "[Prompt] A futuristic digital eye scanning a chaotic real-world street, transforming it into structured data streams, cyberpunk style, cinematic lighting, 4k",
+      "is_optional": true
+    },
+    {
+      "scene_id": "11_cat_recognition",
+      "type": "ai_image",
+      "filename": "assets/images/11_cat_recognition.png",
+      "description": "[Prompt] A cute cat emerging from a stream of glowing green matrix code, digital art, high detail, 4k",
+      "is_optional": true
+    },
+    {
+      "scene_id": "14_fusion_moment",
+      "type": "ai_image",
+      "filename": "assets/images/14_fusion_moment.png",
+      "description": "[Prompt] Two distinct energy streams, one blue representing text and one orange representing vision, colliding and merging into a brilliant white light, abstract tech style, 4k",
+      "is_optional": true
+    },
+    {
+      "scene_id": "22_complete_entity",
+      "type": "ai_image",
+      "filename": "assets/images/22_complete_entity.png",
+      "description": "[Prompt] A sleek humanoid robot head with glowing eyes and a speaking mouth interface, surrounded by floating icons of images and text, futuristic, 4k",
+      "is_optional": true
+    },
+    {
+      "scene_id": "22_complete_entity",
+      "type": "clipart",
+      "filename": "assets/manual/22_complete_entity.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    }
+  ],
+  "summary": "共25个场景，需要AI生图3张，需要你准备8项素材",
+  "ai_image_count": 3
+}

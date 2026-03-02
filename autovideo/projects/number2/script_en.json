@@ -1,0 +1,442 @@
+[
+  {
+    "id": "01_intro",
+    "text": "",
+    "visual": {
+      "type": "title_card",
+      "prompt": "What are vision models and multimodal AI? Visual Models & Multimodal AI",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "fade_black"
+  },
+  {
+    "id": "02_cvnlp",
+    "text": "When we talk about multimodal AI, two pillars of deep learning come to mind: Computer Vision and Natural Language Processing.",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/02_cvnlp.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "03_lang_vs_vision",
+    "text": "Language models are the 'listeners and speakers' — mastering text understanding and generation.",
+    "visual": {
+      "type": "manim",
+      "prompt": "Animated split screen: left side shows speech bubbles and text flowing; right side shows an eye icon with light rays — labeled 'NLP' and 'CV'",
+      "source": null,
+      "scene_class": "SplitConceptDiagram",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "04_cv_goal",
+    "text": "Computer vision aims to let AI truly 'see' — interpreting images and videos just like humans do.",
+    "visual": {
+      "type": "ai_image",
+      "prompt": "A human eye merging with a digital camera lens, surrounded by floating image thumbnails and video frames, cinematic lighting, digital art, 4k, abstract tech style",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "05_what_is_vm",
+    "text": "",
+    "visual": {
+      "type": "title_card",
+      "prompt": "What is a Vision Model? Defining the Pixel Translator",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "fade_black"
+  },
+  {
+    "id": "06_pixel_translator",
+    "text": "It's the 'translator' of the pixel world.",
+    "visual": {
+      "type": "manim",
+      "prompt": "Animated translation metaphor: left side shows a grid of RGB numbers; right side shows a clear cat image; arrow in middle labeled 'Vision Model'",
+      "source": null,
+      "scene_class": "PixelToImageTranslation",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "07_pixels_as_numbers",
+    "text": "To computers, images aren't colorful scenes — they're matrices of raw numbers.",
+    "visual": {
+      "type": "image",
+      "prompt": null,
+      "source": "assets/manual/07_pixels_as_numbers.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "08_how_vm_works",
+    "text": "Vision models extract meaning from these numbers — starting with edges and textures, then shapes, and finally objects.",
+    "visual": {
+      "type": "manim",
+      "prompt": "Layered feature extraction animation: grayscale edge map → texture heatmap → object bounding box → final label 'cat'",
+      "source": null,
+      "scene_class": "FeatureHierarchy",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "09_cnn_transformer",
+    "text": "Whether CNNs or Transformers — both use hierarchical filtering to turn pixels into perception.",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/09_cnn_transformer.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "10_lvm_emergence",
+    "text": "As compute exploded, so did model scale — giving rise to Vision Large Models, or LVMs.",
+    "visual": {
+      "type": "manim",
+      "prompt": "Upward graph showing 'Model Size' vs 'Year', with LLM and LVM branches diverging after 2020, glowing nodes",
+      "source": null,
+      "scene_class": "ScaleGrowthChart",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "11_vlm_fusion",
+    "text": "",
+    "visual": {
+      "type": "title_card",
+      "prompt": "The Fusion Moment Vision + Language = VLM",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "fade_black"
+  },
+  {
+    "id": "12_siloed_vs_integrated",
+    "text": "Traditional AI was siloed — vision systems saw, language models spoke.",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/12_siloed_vs_integrated.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "13_multimodal_breakthrough",
+    "text": "Multimodal AI breaks down those barriers — unifying vision and language into one coherent understanding.",
+    "visual": {
+      "type": "manim",
+      "prompt": "Two neural networks — one eye-shaped, one speech-bubble-shaped — merging into a single interconnected brain icon with bidirectional arrows",
+      "source": null,
+      "scene_class": "VLMFusionDiagram",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "14_why_vlm_powerful",
+    "text": "",
+    "visual": {
+      "type": "title_card",
+      "prompt": "Why Are VLMs Powerful? Beyond Pixels and Words",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "fade_black"
+  },
+  {
+    "id": "15_understanding_logic",
+    "text": "They don’t just process pixels or words — they understand the deep logic linking images and language.",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "dark blue gradient background with subtle interwoven image and text glyphs",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "16_image_to_text",
+    "text": "They generate rich captions — given a landscape photo, they craft evocative social media copy.",
+    "visual": {
+      "type": "ai_image",
+      "prompt": "A serene mountain lake photo with overlaid elegant caption text 'Sunset reflections whisper stillness.', digital art, soft focus, 4k",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "17_vqa",
+    "text": "They answer visual questions — like 'What is the person in red doing?' — with precise, grounded answers.",
+    "visual": {
+      "type": "image",
+      "prompt": null,
+      "source": "assets/manual/17_vqa.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "18_text_to_image",
+    "text": "And they create images from text — turning your prompt into a fully imagined scene.",
+    "visual": {
+      "type": "ai_image",
+      "prompt": "A photorealistic illustration generated from the prompt 'a cyberpunk cat wearing neon goggles, sitting on a floating data server, Tokyo at night', digital art, cinematic lighting, 4k",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "19_summary_analogy",
+    "text": "In short: vision models give AI eyes. Language models give AI mouths.",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "deep indigo background with minimalist icons: an eye on left, mouth on right, connected by a glowing line",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "20_multimodal_whole",
+    "text": "Multimodal models make AI a complete agent — seeing, reasoning, and expressing in human terms.",
+    "visual": {
+      "type": "manim",
+      "prompt": "Animated silhouette of a human figure, with left half showing eye + camera feed, right half showing speech bubble + text stream, center pulsing with 'VLM' logo",
+      "source": null,
+      "scene_class": "MultimodalAgent",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "21_prompt_intro",
+    "text": "",
+    "visual": {
+      "type": "title_card",
+      "prompt": "The Universal Programming Language Prompt Engineering",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "fade_black"
+  },
+  {
+    "id": "22_prompt_definition",
+    "text": "Enter the AI era’s universal programming language: the prompt.",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "black background with glowing monospace text 'PROMPT' centered, subtle cursor blink effect",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  }
+]

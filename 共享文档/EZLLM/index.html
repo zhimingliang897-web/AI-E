@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EZLLM - 零基础学大模型</title>
+    <meta name="description" content="从入门到精通，用最通俗的语言讲解 AI 大语言模型">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f6f6f7;
+            --bg-sidebar: #f6f6f7;
+            --text-primary: #1a1a1a;
+            --text-secondary: #666666;
+            --text-muted: #999999;
+            --border-color: #e2e2e3;
+            --accent: #5672cd;
+            --accent-light: #eef1fa;
+            --accent-hover: #4861b3;
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+            --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+            --radius-sm: 6px;
+            --radius-md: 12px;
+            --radius-lg: 16px;
+            --sidebar-width: 280px;
+            --toc-width: 220px;
+            --header-height: 64px;
+            --transition: all 0.2s ease;
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #1a1a1a;
+            --bg-secondary: #242424;
+            --bg-sidebar: #161616;
+            --text-primary: #ffffff;
+            --text-secondary: #a8a8a8;
+            --text-muted: #666666;
+            --border-color: #2e2e2e;
+            --accent: #6b8aff;
+            --accent-light: #2a2f42;
+            --accent-hover: #8ba3ff;
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.2);
+            --shadow-md: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            transition: var(--transition);
+        }
+
+        /* 顶部导航栏 */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: var(--header-height);
+            background: var(--bg-primary);
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            padding: 0 24px;
+            z-index: 100;
+            backdrop-filter: blur(12px);
+            background: rgba(255,255,255,0.85);
+        }
+
+        [data-theme="dark"] .header {
+            background: rgba(26,26,26,0.85);
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 18px;
+            color: var(--text-primary);
+        }
+
+        .logo i {
+            font-size: 24px;
+            color: var(--accent);
+        }
+
+        .header-nav {
+            display: flex;
+            gap: 8px;
+        }
+
+        .header-nav a {
+            padding: 8px 16px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: var(--radius-sm);
+            transition: var(--transition);
+        }
+
+        .header-nav a:hover,
+        .header-nav a.active {
+            color: var(--accent);
+            background: var(--accent-light);
+        }
+
+        .header-right {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        /* 搜索框 */
+        .search-trigger {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 14px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            color: var(--text-muted);
+            font-size: 14px;
+            cursor: pointer;
+            transition: var(--transition);
+            min-width: 200px;
+        }
+
+        .search-trigger:hover {
+            border-color: var(--accent);
+        }
+
+        .search-trigger kbd {
+            margin-left: auto;
+            padding: 2px 6px;
+            background: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            font-size: 12px;
+            font-family: inherit;
+        }
+
+        /* 主题切换 */
+        .theme-toggle {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            background: transparent;
+            color: var(--text-secondary);
+            cursor: pointer;
+            border-radius: var(--radius-sm);
+            font-size: 20px;
+            transition: var(--transition);
+        }
+
+        .theme-toggle:hover {
+            background: var(--bg-secondary);
+            color: var(--accent);
+        }
+
+        /* 主容器 */
+        .container {
+            display: flex;
+            padding-top: var(--header-height);
+            min-height: 100vh;
+        }
+
+        /* 侧边栏 */
+        .sidebar {
+            position: fixed;
+            top: var(--header-height);
+            left: 0;
+            width: var(--sidebar-width);
+            height: calc(100vh - var(--header-height));
+            background: var(--bg-sidebar);
+            border-right: 1px solid var(--border-color);
+            overflow-y: auto;
+            padding: 24px 16px;
+            z-index: 50;
+        }
+
+        .sidebar-section {
+            margin-bottom: 24px;
+        }
+
+        .sidebar-title {
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-muted);
+            padding: 0 12px;
+            margin-bottom: 8px;
+        }
+
+        .nav-list {
+            list-style: none;
+        }
+
+        .nav-item {
+            margin-bottom: 2px;
+        }
+
+        .nav-link {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 12px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: var(--radius-sm);
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        .nav-link i {
+            font-size: 16px;
+            opacity: 0.7;
+        }
+
+        .nav-link:hover {
+            background: var(--bg-primary);
+            color: var(--text-primary);
+        }
+
+        .nav-link.active {
+            background: var(--accent-light);
+            color: var(--accent);
+        }
+
+        .nav-link.active i {
+            opacity: 1;
+        }
+
+        /* 主内容区 */
+        .main {
+            flex: 1;
+            margin-left: var(--sidebar-width);
+            margin-right: var(--toc-width);
+            min-width: 0;
+        }
+
+        /* Hero 首页区域 */
+        .hero {
+            padding: 80px 64px;
+            text-align: center;
+            background: linear-gradient(135deg, var(--accent-light) 0%, var(--bg-primary) 100%);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 14px;
+            background: var(--accent);
+            color: white;
+            font-size: 12px;
+            font-weight: 600;
+            border-radius: 20px;
+            margin-bottom: 24px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, var(--accent) 0%, #9b6dff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto 32px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 28px;
+            font-size: 15px;
+            font-weight: 600;
+            border-radius: var(--radius-md);
+            text-decoration: none;
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(86,114,205,0.3);
+        }
+
+        .btn-secondary {
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        /* 特性卡片 */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            padding: 64px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            padding: 32px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        .feature-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--accent-light);
+            color: var(--accent);
+            border-radius: var(--radius-md);
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .feature-card h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .feature-card p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* 文章内容区 */
+        .article {
+            display: none;
+            padding: 48px 64px;
+            max-width: 900px;
+        }
+
+        .article.active {
+            display: block;
+        }
+
+        .article-header {
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .article-tag {
+            display: inline-block;
+            padding: 4px 12px;
+            background: var(--accent-light);
+            color: var(--accent);
+            font-size: 12px;
+            font-weight: 600;
+            border-radius: 20px;
+            margin-bottom: 16px;
+        }
+
+        .article h1 {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 16px;
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        .article-content {
+            font-size: 16px;
+            line-height: 2;
+            color: var(--text-primary);
+        }
+
+        .article-content p {
+            margin-bottom: 20px;
+        }
+
+        .article-content h2 {
+            font-size: 24px;
+            font-weight: 600;
+            margin: 48px 0 20px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border-color);
+            scroll-margin-top: 100px;
+        }
+
+        .article-content h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 32px 0 16px;
+            scroll-margin-top: 100px;
+        }
+
+        /* 代码块样式 */
+        .code-block {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 16px 20px;
+            margin: 20px 0;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 14px;
+            overflow-x: auto;
+        }
+
+        /* 提示框 */
+        .tip-box {
+            padding: 16px 20px;
+            border-radius: var(--radius-md);
+            margin: 20px 0;
+            display: flex;
+            gap: 12px;
+        }
+
+        .tip-box.success {
+            background: #f0fdf4;
+            border: 1px solid #86efac;
+            color: #166534;
+        }
+
+        .tip-box.warning {
+            background: #fef3c7;
+            border: 1px solid #fcd34d;
+            color: #92400e;
+        }
+
+        [data-theme="dark"] .tip-box.success {
+            background: #052e16;
+            border-color: #166534;
+            color: #86efac;
+        }
+
+        [data-theme="dark"] .tip-box.warning {
+            background: #451a03;
+            border-color: #92400e;
+            color: #fcd34d;
+        }
+
+        /* 右侧目录 TOC */
+        .toc {
+            position: fixed;
+            top: var(--header-height);
+            right: 0;
+            width: var(--toc-width);
+            height: calc(100vh - var(--header-height));
+            padding: 32px 24px;
+            border-left: 1px solid var(--border-color);
+            overflow-y: auto;
+            display: none;
+        }
+
+        .toc.active {
+            display: block;
+        }
+
+        .toc-title {
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+        }
+
+        .toc-list {
+            list-style: none;
+        }
+
+        .toc-item {
+            margin-bottom: 8px;
+        }
+
+        .toc-link {
+            display: block;
+            font-size: 13px;
+            color: var(--text-muted);
+            text-decoration: none;
+            padding: 4px 0;
+            padding-left: 12px;
+            border-left: 2px solid transparent;
+            transition: var(--transition);
+        }
+
+        .toc-link:hover,
+        .toc-link.active {
+            color: var(--accent);
+            border-left-color: var(--accent);
+        }
+
+        /* 阅读进度条 */
+        .progress-bar {
+            position: fixed;
+            top: var(--header-height);
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--border-color);
+            z-index: 99;
+        }
+
+        .progress-bar-fill {
+            height: 100%;
+            background: var(--accent);
+            width: 0%;
+            transition: width 0.1s ease;
+        }
+
+        /* 搜索模态框 */
+        .search-modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 200;
+            align-items: flex-start;
+            justify-content: center;
+            padding-top: 100px;
+        }
+
+        .search-modal.active {
+            display: flex;
+        }
+
+        .search-box {
+            width: 100%;
+            max-width: 600px;
+            background: var(--bg-primary);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            overflow: hidden;
+        }
+
+        .search-input-wrapper {
+            display: flex;
+            align-items: center;
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .search-input-wrapper i {
+            font-size: 20px;
+            color: var(--text-muted);
+            margin-right: 12px;
+        }
+
+        .search-input {
+            flex: 1;
+            border: none;
+            background: transparent;
+            font-size: 16px;
+            color: var(--text-primary);
+            outline: none;
+            font-family: inherit;
+        }
+
+        .search-results {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .search-result-item {
+            padding: 16px 20px;
+            cursor: pointer;
+            transition: var(--transition);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .search-result-item:hover {
+            background: var(--bg-secondary);
+        }
+
+        .search-result-item h4 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .search-result-item p {
+            font-size: 13px;
+            color: var(--text-muted);
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .search-result-item mark {
+            background: var(--accent-light);
+            color: var(--accent);
+            padding: 0 2px;
+            border-radius: 2px;
+        }
+
+        .search-empty {
+            padding: 40px 20px;
+            text-align: center;
+            color: var(--text-muted);
+        }
+
+        /* 响应式 */
+        @media (max-width: 1200px) {
+            .toc {
+                display: none !important;
+            }
+            .main {
+                margin-right: 0;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .sidebar {
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+            }
+            .sidebar.open {
+                transform: translateX(0);
+            }
+            .main {
+                margin-left: 0;
+            }
+            .hero h1 {
+                font-size: 32px;
+            }
+            .features {
+                grid-template-columns: 1fr;
+                padding: 32px 24px;
+            }
+            .article {
+                padding: 32px 24px;
+            }
+            .header-nav {
+                display: none;
+            }
+        }
+
+        /* 滚动条 */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--border-color);
+            border-radius: 3px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--text-muted);
+        }
+
+        /* 移动端菜单按钮 */
+        .menu-toggle {
+            display: none;
+            width: 40px;
+            height: 40px;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            background: transparent;
+            color: var(--text-primary);
+            cursor: pointer;
+            font-size: 24px;
+        }
+
+        @media (max-width: 900px) {
+            .menu-toggle {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 阅读进度条 -->
+    <div class="progress-bar">
+        <div class="progress-bar-fill" id="progressBar"></div>
+    </div>
+
+    <!-- 顶部导航 -->
+    <header class="header">
+        <div class="header-left">
+            <button class="menu-toggle" id="menuToggle">
+                <i class="ri-menu-line"></i>
+            </button>
+            <a href="#" class="logo" onclick="showHome(); return false;">
+                <i class="ri-brain-line"></i>
+                <span>EZLLM</span>
+            </a>
+            <nav class="header-nav">
+                <a href="#" class="active" onclick="showHome(); return false;">首页</a>
+                <a href="#" onclick="loadDocument(0); return false;">文档</a>
+            </nav>
+        </div>
+        <div class="header-right">
+            <div class="search-trigger" id="searchTrigger">
+                <i class="ri-search-line"></i>
+                <span>搜索文档...</span>
+                <kbd>Ctrl K</kbd>
+            </div>
+            <button class="theme-toggle" id="themeToggle" title="切换主题">
+                <i class="ri-sun-line"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- 侧边栏 -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-section">
+                <div class="sidebar-title">学习文档</div>
+                <ul class="nav-list" id="navList">
+                    <!-- 动态生成 -->
+                </ul>
+            </div>
+        </aside>
+
+        <!-- 主内容 -->
+        <main class="main" id="mainContent">
+            <!-- 首页 Hero -->
+            <section class="hero" id="heroSection">
+                <div class="hero-badge">
+                    <i class="ri-sparkle-line"></i>
+                    开源 · 免费 · 持续更新
+                </div>
+                <h1>EZLLM</h1>
+                <p>零基础学大模型<br>从入门到精通，用最通俗的语言讲解 AI</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="loadDocument(0)">
+                        <i class="ri-book-open-line"></i>
+                        开始学习
+                    </button>
+                    <a class="btn btn-secondary" href="https://github.com" target="_blank">
+                        <i class="ri-github-line"></i>
+                        GitHub
+                    </a>
+                </div>
+            </section>
+
+            <!-- 特性卡片 -->
+            <section class="features" id="featuresSection">
+                <!-- 动态生成 -->
+            </section>
+
+            <!-- 文章内容区 -->
+            <article class="article" id="articleSection">
+                <div class="article-header">
+                    <span class="article-tag" id="articleTag">文档</span>
+                    <h1 id="articleTitle">标题</h1>
+                    <div class="article-meta">
+                        <span><i class="ri-time-line"></i> 阅读约 5 分钟</span>
+                    </div>
+                </div>
+                <div class="article-content" id="articleContent">
+                    <!-- 文章内容 -->
+                </div>
+            </article>
+        </main>
+
+        <!-- 右侧目录 -->
+        <aside class="toc" id="tocSection">
+            <div class="toc-title">本文目录</div>
+            <ul class="toc-list" id="tocList">
+                <!-- 动态生成 -->
+            </ul>
+        </aside>
+    </div>
+
+    <!-- 搜索模态框 -->
+    <div class="search-modal" id="searchModal">
+        <div class="search-box">
+            <div class="search-input-wrapper">
+                <i class="ri-search-line"></i>
+                <input type="text" class="search-input" id="searchInput" placeholder="输入关键词搜索...">
+            </div>
+            <div class="search-results" id="searchResults">
+                <div class="search-empty">输入关键词开始搜索</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 文档数据
+        const documents = [{"title": "1.什么是大语言模型", "content": "什么是大语言模型？\n首先，我们来搞清楚主角的名字：\n大语言模型，英文叫 Large Language Model，简称 LLM。\n不管是你每天用的通义千问、豆包、文心一言，还是 ChatGPT、Gemini，它们皮囊不同，但灵魂都是 LLM。\n那有人会问：什么是语言模型？\n之所以叫“模型”，是因为它在做一件数学上的事：对人类语言的规律进行数学建模。\n这就好比物理公式模拟抛物线，语言模型是在模拟说话的概率。\n为什么非要加个“大”字？\n其实很简单：只要它够大，就是大语言模型。\n这个“大”指的是参数量，英文叫 Parameters。它们通常包含数十亿甚至数万亿个参数。\n你可以把它想象成大脑里天文数字般的神经连接——正是这种暴力美学的规模，才涌现出了智能。\n它的工作本质上只有一件事——预测下一个字，也就是 Next Token Prediction。\n举个例子：当你输入“我爱”，模型经过疯狂计算，发现后面接“你”的概率是 99%，接“吃”的概率是 0.1%。于是它自信地输出了——“你”。\n说人话就是：LLM 是专门解决自然语言问题的专家。\n在最基础的定义里，它只懂文字。它本质上看不懂图片，也听不懂视频，它处理的是纯粹的文本信息流。\n这时候，小伙伴们肯定想到了：既然有处理文字的语言模型，那是不是也有处理图片的视觉模型？没错！甚至还有把它们合体的多模态模型。", "headings": ["什么是大语言模型？", "那有人会问：什么是语言模型？", "为什么非要加个“大”字？", "举个例子：当你输入“我爱”，模型经过疯狂..."]}, {"title": "2.什么是视觉模型与多模态", "content": "什么是视觉模型与多模态？\n什么是视觉模型？\n简单来说，它是像素世界的“翻译官”。在计算机眼中，图片并非色彩斑斓的风景，而是一堆冰冷的数字矩阵。视觉模型的任务，就是从这些杂乱的数字中抽丝剥茧。无论是经典的 CNN（卷积神经网络），还是如今大火的 Transformer，其核心逻辑都是通过多层网络过滤，从基础的线条、边缘，进化到识别复杂的形状与物体。最终，它会笃定地告诉你：“嘿，这堆数字代表的是一只猫。”\n提到多模态，我们绕不开深度学习领域的两座大山：CV（计算机视觉）与 NLP（自然语言处理）。如果说语言模型是负责“听话”与“对话”的智囊，致力于解决文本理解的难题，那么 CV 要解决的，就是让 AI 真正“看见”这个世界。它的终极目标很简单：让计算机像人类一样，读懂每一张图像、每一段视频。\n随着算力时代的爆炸式增长，模型规模也在疯狂扩张。既然有处理文本的 LLM（大语言模型），自然也催生了处理图像与文本的 VLM（Vision-Language Models，视觉语言模型），也就是我们常说的多模态模型。过去的 AI，看图的只管看图，说话的只管说话，是各司其职的“偏科生”；而多模态 AI，彻底打通了视觉与语言的“任督二脉”，实现了跨维度的信息互通。\n它到底强在哪？\n它不再是孤立地处理像素，而是深刻理解了“画面”与“文字”之间的内在逻辑。它能由图生文：丢给它一张风景照，它能瞬间为你生成充满氛围感的朋友圈文案；它能视觉问答：你问它“图中穿红衣服的人在干什么？”，它能精准捕捉细节并给出答案；它甚至能文生图：你只需给出一句指令，它便能凭空构想出一幅画作。\n说白了：视觉模型给了 AI 眼睛，语言模型给了 AI 嘴巴。而多模态模型，则让 AI 进化成了一个“有眼有嘴、能看能说”的完整体。它不仅能洞察物理世界，还能将其中的逻辑转化成人类听得懂的语言。既然 AI 已经具备了观察与表达的能力，那我们该如何精准地指挥它干活呢？这就引出了 AI 时代的“通用编程语言”——提示词（Prompt）。", "headings": ["什么是视觉模型与多模态？", "什么是视觉模型？", "它到底强在哪？", "说白了：视觉模型给了 AI 眼睛，语言模..."]}, {"title": "3.什么是prompt", "content": "什么是 Prompt？\n\n在拥有了超级大脑（LLM）和视觉感知能力之后，AI 并不能自动知晓你的具体意图，它需要一个明确的指令来激活。这个指令，就叫 Prompt，中文通常翻译为“提示词”。它是你输入给模型的一段文字，也是你和 AI 交流的核心桥梁。简单来说，Prompt 就是你对 AI 发出的具体任务指令。\n\n为什么叫 Prompt？\n这个词在英语里有“提示、驱使”的含义。\n我们可以把 AI 想象成一位博学但需要引导的演员，而你则是导演或提词员。\n如果你不给它明确的提示（Prompt），它可能无法开始工作，或者生成的内容偏离预期。\n你的任务，就是提供清晰的线索，引导它基于这些线索，通过概率计算，一步步生成符合你要求的内容。\n\nPrompt 的质量，直接决定了 AI 的输出效果。\n这在计算机领域遵循一个基本原则：Garbage In, Garbage Out（垃圾进，垃圾出）。\n大语言模型本质上是一个概率预测工具。Prompt 的作用，就是“限定”这个概率预测的范围和方向。\n你给的约束越具体，它生成的内容就越精准；你给的指令越模糊，结果就越容易不可控。\n\n我们来看个对比。\n❌ 模糊的 Prompt：\n你输入：“写个故事。”\nAI 面临的困惑：“写什么主题？给谁看？多长篇幅？什么风格？”\n结果：它可能生成一篇内容平淡、缺乏重点的流水账。\n\n✅ 清晰的 Prompt：\n你输入：“你是一位科幻作家。请用简洁有力的风格，写一个关于‘只会说谎的机器人’的 300 字微小说，要求结局有反转。”\nAI 接收到的信息：“明确了角色设定、写作风格、题材、字数限制以及结局要求。”\n结果：它生成了一篇结构完整、风格鲜明的短篇小说。\n\n通俗来说：\nPrompt 是 AI 时代的一种新式“编程语言”。\n过去我们用 Python、C++ 等代码指挥电脑；现在，我们用自然语言指挥 AI。\nPrompt 就是你调动 AI 能力的“钥匙”。指令清晰准确，AI 就能发挥巨大价值；指令模糊不清，AI 的表现就会大打折扣。", "headings": ["什么是 Prompt？", "为什么叫 Prompt？", "❌ 模糊的 Prompt：", "✅ 清晰的 Prompt：", "通俗来说："]}, {"title": "4.什么是生成式模型(文档)", "content": "什么是生成式模型？\n\n大家都在聊大模型、AI 画画，这背后的核心主角，其实叫“生成式模型”。\n有人会问，这和以前的 AI 有什么区别？\n简单来说：以前的传统 AI 是个“分类员”（判别式模型），你给它一万张图，它负责做条件概率 P(Y|X) 的填空题，找出哪张是猫；\n而生成式模型是个“创作家”，它本质上是在破解海量数据背后的底层概率分布 P(X)，从而凭空“创造”出世界上原本不存在的全新内容。\n所以说，GPT 根据你的问题生成答案，豆包根据你的提示词生成图片，它们都叫生成式模型。\n\n启蒙与视觉的觉醒（1960s - 2014）\n你以为生成式模型是近几年才有的？其实它的逆袭之路走了大半个世纪。让我们顺着时间轴来看看。\n\n上世纪 60 到 70 年代（远古启蒙时代）：\n科学家就发明了隐马尔可夫模型（HMM）和高斯混合模型（GMM）等最早的统计生成模型，最初用来处理简单的语音序列。\n1966 年，世界上第一个聊天机器人 ELIZA 诞生，它甚至能模仿心理医生和你用自然语言对话，虽然只是简单的模式匹配，却埋下了人机交互的种子。\n\n2014 年（视觉觉醒）：\n这是个超级分水岭！这一年，变分自编码器（VAE）和生成对抗网络（GAN）横空出世。\nVAE 的基本思想非常巧妙：它将输入数据映射到一个连续的“隐空间”中，再通过解码器从中采样生成新数据，目标是让生成的数据与原始数据尽可能接近，实现了“数据重建”。\n而 GAN 的原理更是极其精妙：它设计了一个“生成器”负责造假图，一个“判别器”负责当警察打假。在无数次的博弈中，机器终于学会了生成极度逼真的人脸，AI 真正拉开了视觉创作的序幕。\n\n架构革命与多模态爆发（2017 - 2026）\n2017 年（架构基石）：\nGoogle 发表论文提出 Transformer 架构，彻底改变了游戏规则。它不仅引发了早期的 GPT 系列、T5，以及后来 LLaMA 等大语言模型的全面爆发，更在随后跨界衍生出了处理视觉的 ViT（Vision Transformer），为多模态融合奠定了坚实的地基。\n\n2020 到 2021 年（扩散元年）：\n这两年在 AI 历史上具有里程碑意义。\n2020 年，一篇划时代的论文提出了 DDPM（去噪扩散概率模型）。它的原理看似反直觉：“加噪再去噪”！先给好图一步步加噪直到变成纯随机噪声，再训练模型逆向将其还原。\n紧接着到了 2021 年，OpenAI 直接用一篇名为《扩散模型击败 GAN》的论文，实锤了它在图像质量上对老大哥 GAN 的全面超越！这项技术直接催生了后来火爆全球的 Stable Diffusion 和 Midjourney。\n\n2024 到 2025 年（视频大爆发）：\nAI 不仅能画画，还能当导演了！这得益于技术架构的再次进化。\n以 DiT（Diffusion Transformer）为代表的新架构，摒弃了传统的 U-Net，将视觉数据切块处理，结合 Transformer 的强大算力，成为了 Sora 等大模型的技术底座；\n而随后流匹配等新算法的普及，优化了采样路径，彻底解决了长视频生成的连贯性与高分辨率难题。\n以 Sora、Veo 和国产之光可灵、Seedance 为代表的视频生成大模型，让 AI 能够理解物理运动规律，一口气生成拥有复杂运镜的电影级高清视频。\n\n2026 年及未来（全模态降临）：\n从拼接外挂到走向原生，生成式模型正在进化为真正的“原生全模态”。它将像人类一样，同时且自然地处理文本、图像和音频，重塑从医疗、教育到创意产业的每一个角落。", "headings": ["什么是生成式模型？", "有人会问，这和以前的 AI 有什么区别？"]}];
+
+        // DOM 元素
+        const navList = document.getElementById('navList');
+        const heroSection = document.getElementById('heroSection');
+        const featuresSection = document.getElementById('featuresSection');
+        const articleSection = document.getElementById('articleSection');
+        const articleTitle = document.getElementById('articleTitle');
+        const articleContent = document.getElementById('articleContent');
+        const articleTag = document.getElementById('articleTag');
+        const tocSection = document.getElementById('tocSection');
+        const tocList = document.getElementById('tocList');
+        const progressBar = document.getElementById('progressBar');
+        const searchModal = document.getElementById('searchModal');
+        const searchInput = document.getElementById('searchInput');
+        const searchResults = document.getElementById('searchResults');
+        const themeToggle = document.getElementById('themeToggle');
+        const sidebar = document.getElementById('sidebar');
+        const menuToggle = document.getElementById('menuToggle');
+
+        let currentDocIndex = -1;
+
+        // 初始化
+        function init() {
+            renderNavigation();
+            renderFeatures();
+            initTheme();
+            initSearch();
+            initScrollProgress();
+            initMobileMenu();
+        }
+
+        // 渲染导航
+        function renderNavigation() {
+            navList.innerHTML = '';
+            documents.forEach((doc, index) => {
+                const li = document.createElement('li');
+                li.className = 'nav-item';
+                li.innerHTML = `
+                    <a class="nav-link" data-index="${index}" onclick="loadDocument(${index})">
+                        <i class="ri-file-text-line"></i>
+                        <span>${doc.title}</span>
+                    </a>
+                `;
+                navList.appendChild(li);
+            });
+        }
+
+        // 渲染特性卡片
+        function renderFeatures() {
+            const icons = ['ri-brain-line', 'ri-eye-line', 'ri-magic-line', 'ri-code-line', 'ri-lightbulb-line', 'ri-rocket-line'];
+            featuresSection.innerHTML = '';
+            documents.slice(0, 6).forEach((doc, index) => {
+                const card = document.createElement('div');
+                card.className = 'feature-card';
+                card.onclick = () => loadDocument(index);
+
+                const title = doc.title.replace(/^\d+\./, '').trim();
+                const preview = doc.content.substring(0, 80) + '...';
+
+                card.innerHTML = `
+                    <div class="feature-icon">
+                        <i class="${icons[index % icons.length]}"></i>
+                    </div>
+                    <h3>${title}</h3>
+                    <p>${preview}</p>
+                `;
+                featuresSection.appendChild(card);
+            });
+        }
+
+        // 显示首页
+        function showHome() {
+            heroSection.style.display = 'block';
+            featuresSection.style.display = 'grid';
+            articleSection.classList.remove('active');
+            tocSection.classList.remove('active');
+            currentDocIndex = -1;
+
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+            });
+
+            // 更新导航状态
+            document.querySelectorAll('.header-nav a').forEach((a, i) => {
+                a.classList.toggle('active', i === 0);
+            });
+        }
+
+        // 加载文档
+        function loadDocument(index) {
+            const doc = documents[index];
+            if (!doc) return;
+
+            currentDocIndex = index;
+
+            // 隐藏首页，显示文章
+            heroSection.style.display = 'none';
+            featuresSection.style.display = 'none';
+            articleSection.classList.add('active');
+            tocSection.classList.add('active');
+
+            // 设置内容
+            const title = doc.title.replace(/^\d+\./, '').trim();
+            articleTitle.textContent = title;
+            articleTag.textContent = '第 ' + (index + 1) + ' 章';
+
+            // 解析内容，将段落转换为 HTML
+            const content = parseContent(doc.content);
+            articleContent.innerHTML = content;
+
+            // 生成目录
+            renderTOC(doc.headings || []);
+
+            // 更新导航高亮
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.toggle('active', parseInt(link.dataset.index) === index);
+            });
+
+            // 更新顶部导航
+            document.querySelectorAll('.header-nav a').forEach((a, i) => {
+                a.classList.toggle('active', i === 1);
+            });
+
+            // 滚动到顶部
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+
+            // 关闭移动端菜单
+            sidebar.classList.remove('open');
+        }
+
+        // 解析内容
+        function parseContent(text) {
+            const lines = text.split('\n');
+            let html = '';
+            let inParagraph = false;
+
+            lines.forEach(line => {
+                line = line.trim();
+                if (!line) {
+                    if (inParagraph) {
+                        html += '</p>';
+                        inParagraph = false;
+                    }
+                    return;
+                }
+
+                // 检测标题（以？结尾的短句）
+                if ((line.endsWith('？') || line.endsWith('?')) && line.length < 30) {
+                    if (inParagraph) {
+                        html += '</p>';
+                        inParagraph = false;
+                    }
+                    const id = 'heading-' + line.replace(/[^\w\u4e00-\u9fa5]/g, '').substring(0, 10);
+                    html += `<h2 id="${id}">${line}</h2>`;
+                    return;
+                }
+
+                // 检测提示框
+                if (line.startsWith('❌')) {
+                    if (inParagraph) { html += '</p>'; inParagraph = false; }
+                    html += `<div class="tip-box warning"><i class="ri-close-circle-line"></i><div>${line}</div></div>`;
+                    return;
+                }
+                if (line.startsWith('✅')) {
+                    if (inParagraph) { html += '</p>'; inParagraph = false; }
+                    html += `<div class="tip-box success"><i class="ri-checkbox-circle-line"></i><div>${line}</div></div>`;
+                    return;
+                }
+
+                // 普通段落
+                if (!inParagraph) {
+                    html += '<p>';
+                    inParagraph = true;
+                } else {
+                    html += '<br>';
+                }
+                html += line;
+            });
+
+            if (inParagraph) {
+                html += '</p>';
+            }
+
+            return html;
+        }
+
+        // 渲染目录
+        function renderTOC(headings) {
+            tocList.innerHTML = '';
+            if (headings.length === 0) {
+                tocSection.classList.remove('active');
+                return;
+            }
+            headings.forEach(heading => {
+                const li = document.createElement('li');
+                li.className = 'toc-item';
+                const id = 'heading-' + heading.replace(/[^\w\u4e00-\u9fa5]/g, '').substring(0, 10);
+                li.innerHTML = `<a class="toc-link" href="#${id}">${heading}</a>`;
+                tocList.appendChild(li);
+            });
+        }
+
+        // 主题切换
+        function initTheme() {
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+                document.body.dataset.theme = 'dark';
+                themeToggle.innerHTML = '<i class="ri-moon-line"></i>';
+            }
+
+            themeToggle.addEventListener('click', () => {
+                const isDark = document.body.dataset.theme === 'dark';
+                document.body.dataset.theme = isDark ? '' : 'dark';
+                themeToggle.innerHTML = isDark ? '<i class="ri-sun-line"></i>' : '<i class="ri-moon-line"></i>';
+                localStorage.setItem('theme', isDark ? 'light' : 'dark');
+            });
+        }
+
+        // 搜索功能
+        function initSearch() {
+            const searchTrigger = document.getElementById('searchTrigger');
+
+            searchTrigger.addEventListener('click', () => {
+                searchModal.classList.add('active');
+                searchInput.focus();
+            });
+
+            searchModal.addEventListener('click', (e) => {
+                if (e.target === searchModal) {
+                    searchModal.classList.remove('active');
+                    searchInput.value = '';
+                    searchResults.innerHTML = '<div class="search-empty">输入关键词开始搜索</div>';
+                }
+            });
+
+            // Ctrl+K 快捷键
+            document.addEventListener('keydown', (e) => {
+                if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+                    e.preventDefault();
+                    searchModal.classList.add('active');
+                    searchInput.focus();
+                }
+                if (e.key === 'Escape') {
+                    searchModal.classList.remove('active');
+                }
+            });
+
+            searchInput.addEventListener('input', (e) => {
+                const keyword = e.target.value.toLowerCase().trim();
+                if (!keyword) {
+                    searchResults.innerHTML = '<div class="search-empty">输入关键词开始搜索</div>';
+                    return;
+                }
+
+                const results = documents.filter(doc =>
+                    doc.title.toLowerCase().includes(keyword) ||
+                    doc.content.toLowerCase().includes(keyword)
+                );
+
+                if (results.length === 0) {
+                    searchResults.innerHTML = '<div class="search-empty">未找到相关文档</div>';
+                    return;
+                }
+
+                searchResults.innerHTML = results.map(doc => {
+                    const index = documents.indexOf(doc);
+                    const title = doc.title.replace(new RegExp(keyword, 'gi'), '<mark>$&</mark>');
+                    let preview = doc.content.substring(0, 100);
+                    preview = preview.replace(new RegExp(keyword, 'gi'), '<mark>$&</mark>');
+
+                    return `
+                        <div class="search-result-item" onclick="loadDocument(${index}); searchModal.classList.remove('active');">
+                            <h4>${title}</h4>
+                            <p>${preview}...</p>
+                        </div>
+                    `;
+                }).join('');
+            });
+        }
+
+        // 阅读进度
+        function initScrollProgress() {
+            window.addEventListener('scroll', () => {
+                const scrollTop = window.scrollY;
+                const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+                const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+                progressBar.style.width = progress + '%';
+            });
+        }
+
+        // 移动端菜单
+        function initMobileMenu() {
+            menuToggle.addEventListener('click', () => {
+                sidebar.classList.toggle('open');
+            });
+        }
+
+        // 启动
+        init();
+    </script>
+</body>
+</html>

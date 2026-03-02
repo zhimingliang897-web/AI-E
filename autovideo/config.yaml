@@ -1,0 +1,88 @@
+# config.yaml (放在项目根目录，与 pipeline.py 同级)
+llm:
+  enabled: true
+  provider: "qwen"
+  api_key: "sk-0ef56d1b3ba54a188ce28a46c54e2a24"
+  base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+  model: "qwen-plus"
+
+image_gen:
+  enabled: true
+  provider: "dashscope"
+  api_key: "sk-0ef56d1b3ba54a188ce28a46c54e2a24"
+  base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+  model: "qwen-image-max"
+  max_calls: 60
+
+tts:
+  enabled: true
+  provider: "edge" # edge / chattts
+  padding_duration: 0.1 # 句间停顿秒数(默认0.3)，设为0则无额外停顿
+  # 推荐中文音色:
+  #   男: zh-CN-YunxiNeural (沉稳小说), zh-CN-YunyangNeural (新闻播报)
+  #   女: zh-CN-XiaoxiaoNeural (甜美知性 学姐音)
+  #
+  # 💡【林艾尔(Al-E) 专用人设调教参数】:
+  #   方案A(清冷御姐): voice="zh-CN-XiaozhenNeural", rate="+0%", pitch="-5Hz"
+  #   方案B(三无少女): voice="zh-CN-XiaoyiNeural", rate="-10%", pitch="-15Hz"
+  #   方案C(安静邻家): voice="zh-CN-XiaoxiaoNeural", rate="-8%", pitch="+0Hz"
+  voice: "zh-CN-XiaoxiaoNeural"
+  rate: "+4%"
+  pitch: "-7Hz"
+  # --- ChatTTS 参数 ---
+  seed: 1096 # 音色种子 (换不同数字试不同声音, 推荐 2222/1111)
+  speed: 5 # 语速 1-9 (5=正常)
+  oral: 0 # 口语化程度 0-9 (推荐 3，带适当呼吸和语气停顿)
+  laugh: 0 # 笑声 0-2
+  break_: 6 # 语缀停顿 0-7
+
+rvc:
+  enabled: false
+
+avatar:
+  enabled: true
+  video_path: "input/aiernewk--LLM2.mp4"
+  audio_path: ""
+  default_mode: "split_left"
+  default_scale: 1.0
+  margin: 0
+
+# ===== 关键修复：确保 font_size 是整数，不要加引号 =====
+# font 字段跨平台说明：
+#   Windows : 填 "Microsoft-YaHei"（系统自带）
+#   Linux   : 填任意值（如 "Microsoft-YaHei"）均可——运行时自动查找 assets/fonts/ 下的字体
+#             先在服务器执行 `python scripts/download_fonts.py` 下载字体即可，config 不用改
+subtitle:
+  enabled: true
+  font: "Microsoft-YaHei"
+  font_size: 36 # 字幕字号（1080p 下更易读）
+  title_font_size: 64 # 标题卡字号（solid_bg / title_card）
+  color: "white"
+  bg_color: "black"
+  bg_opacity: 0.55
+
+video:
+  width: 1920
+  height: 1080
+  fps: 30
+  codec: "auto" # auto=自动检测NVENC; h264_nvenc=强制GPU; libx264=强制CPU
+  transition: "crossfade" # 选项: crossfade / fade_black / cut
+  transition_duration: 0.6 # 转场时长(秒)
+  default_duration: 2.0 # 无音频兜底时长(秒)
+  default_title_duration: 1.8 # 标题卡无音频时长(秒)
+  default_solid_bg_duration: 1.6 # 纯色卡无音频时长(秒)
+
+visual:
+  image_motion: "subtle" # 选项: subtle / ken_burns / static
+  ken_burns_zoom: 0.06 # 缩放幅度(0.03-0.12)
+  ken_burns_pan: 0.35 # 平移强度(0.2-0.8)
+  ken_burns_pre_scale: 1.18 # 预放大倍率(需 >= 1 + zoom)
+  ken_burns_directions: "cardinal" # 选项: cardinal / all
+
+pixabay:
+  api_key: "54737375-c17bee62ede940cf00d405e25" # 免费注册: https://pixabay.com/api/docs/
+
+paths:
+  assets: "assets"
+  output: "output"
+  scripts: "scripts"

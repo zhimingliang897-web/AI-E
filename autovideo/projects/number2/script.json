@@ -1,0 +1,502 @@
+[
+  {
+    "id": "01_title",
+    "text": "",
+    "visual": {
+      "type": "title_card",
+      "prompt": "什么是视觉模型与多模态？ What are Vision Models & Multimodal AI?",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.2
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "fade_black"
+  },
+  {
+    "id": "02_intro_cv_nlp",
+    "text": "提到多模态，我们绕不开深度学习领域的两座大山：CV 与 NLP。",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/02_intro_cv_nlp.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "03_llm_role",
+    "text": "如果说语言模型是负责“听话”与“对话”的智囊，致力于解决文本理解的难题，",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "语言模型=听话对话",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "cut"
+  },
+  {
+    "id": "04_cv_goal",
+    "text": "那么 CV 要解决的，就是让 AI 真正“看见”这个世界。",
+    "visual": {
+      "type": "ai_image",
+      "prompt": "A futuristic digital eye scanning a chaotic real-world street, transforming it into structured data streams, cyberpunk style, cinematic lighting, 4k",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.2
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "05_cv_ultimate",
+    "text": "它的终极目标很简单：让计算机像人类一样，读懂每一张图像、每一段视频。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "像人类一样读懂影像",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "cut"
+  },
+  {
+    "id": "06_what_is_vision",
+    "text": "那么，什么是视觉模型？简单来说，它是像素世界的“翻译官”。",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/06_what_is_vision.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "07_matrix_view",
+    "text": "在计算机眼中，图片并非色彩斑斓的风景，而是一堆冰冷的数字矩阵。",
+    "visual": {
+      "type": "manim",
+      "prompt": "Show a colorful landscape photo dissolving into a grid of green binary numbers and matrices",
+      "source": null,
+      "scene_class": "ImageToMatrix",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.2
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "cut"
+  },
+  {
+    "id": "08_extraction_process",
+    "text": "视觉模型的任务，就是从这些杂乱的数字中抽丝剥茧。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "从杂乱数字中抽丝剥茧",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "cut"
+  },
+  {
+    "id": "09_cnn_transformer",
+    "text": "无论是经典的 CNN，还是如今大火的 Transformer，其核心逻辑都是通过多层网络过滤，",
+    "visual": {
+      "type": "manim",
+      "prompt": "Animate a flow chart showing input data passing through multiple layers of neural networks (CNN and Transformer blocks) filtering features",
+      "source": null,
+      "scene_class": "NeuralNetFlow",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.2
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "10_feature_evolution",
+    "text": "从基础的线条、边缘，进化到识别复杂的形状与物体。",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/10_feature_evolution.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "cut"
+  },
+  {
+    "id": "11_cat_recognition",
+    "text": "最终，它会笃定地告诉你：“嘿，这堆数字代表的是一只猫。”",
+    "visual": {
+      "type": "ai_image",
+      "prompt": "A cute cat emerging from a stream of glowing green matrix code, digital art, high detail, 4k",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.2
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "12_compute_explosion",
+    "text": "随着算力时代的爆炸式增长，模型规模也在疯狂扩张。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "算力爆炸，模型扩张",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "cut"
+  },
+  {
+    "id": "13_llm_to_lvm",
+    "text": "既然有处理文本的 LLM，自然也催生了处理图像的 LVM，也就是视觉大模型。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "LLM 文本 -> LVM 图像",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "cut"
+  },
+  {
+    "id": "14_fusion_moment",
+    "text": "但真正的“进化时刻”发生在——融合。这便诞生了 VLM，也就是我们常说的多模态模型。",
+    "visual": {
+      "type": "ai_image",
+      "prompt": "Two distinct energy streams, one blue representing text and one orange representing vision, colliding and merging into a brilliant white light, abstract tech style, 4k",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.2
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "15_old_ai_silos",
+    "text": "过去的 AI，看图的只管看图，说话的只管说话，是各司其职的“偏科生”；",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/15_old_ai_silos.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "16_new_ai_connection",
+    "text": "而多模态 AI，彻底打通了视觉与语言的“任督二脉”，实现了跨维度的信息互通。",
+    "visual": {
+      "type": "manim",
+      "prompt": "Show two isolated islands labeled 'Vision' and 'Language' being connected by a glowing bridge, with data flowing freely between them",
+      "source": null,
+      "scene_class": "BridgeConnection",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.2
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "cut"
+  },
+  {
+    "id": "17_strength_question",
+    "text": "它到底强在哪？它不再是孤立地处理像素，而是深刻理解了“画面”与“文字”之间的内在逻辑。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "理解画与文的内在逻辑",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "cut"
+  },
+  {
+    "id": "18_img_to_text",
+    "text": "它能由图生文：丢给它一张风景照，它能瞬间为你生成充满氛围感的朋友圈文案；",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/18_img_to_text.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "19_visual_qa",
+    "text": "它能视觉问答：你问它“图中穿红衣服的人在干什么？”，它能精准捕捉细节并给出答案；",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/19_visual_qa.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "cut"
+  },
+  {
+    "id": "20_text_to_img",
+    "text": "它甚至能文生图：你只需给出一句指令，它便能凭空构想出一幅画作。",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/20_text_to_img.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "cut"
+  },
+  {
+    "id": "21_eyes_mouth_meta",
+    "text": "说白了：视觉模型给了 AI 眼睛，语言模型给了 AI 嘴巴。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "视觉=眼，语言=嘴",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "cut"
+  },
+  {
+    "id": "22_complete_entity",
+    "text": "而多模态模型，则让 AI 进化成了一个“有眼有嘴、能看能说”的完整体。",
+    "visual": {
+      "type": "clipart",
+      "prompt": "A sleek humanoid robot head with glowing eyes and a speaking mouth interface, surrounded by floating icons of images and text, futuristic, 4k",
+      "source": "assets/manual/22_complete_entity.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.2
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "23_logic_translation",
+    "text": "它不仅能洞察物理世界，还能将其中的逻辑转化成人类听得懂的语言。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "洞察世界，转化语言",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "cut"
+  },
+  {
+    "id": "24_prompt_intro",
+    "text": "既然 AI 已经具备了观察与表达的能力，那我们该如何精准地指挥它干活呢？",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "如何精准指挥 AI？",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "cut"
+  },
+  {
+    "id": "25_prompt_conclusion",
+    "text": "这就引出了 AI 时代的“通用编程语言”——提示词（Prompt）。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "通用语言：提示词 Prompt",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "fade_black"
+  }
+]

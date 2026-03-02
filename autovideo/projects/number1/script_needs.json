@@ -1,0 +1,55 @@
+{
+  "needs_list": [
+    {
+      "scene_id": "05_examples",
+      "type": "clipart",
+      "filename": "assets/manual/05_examples.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "10_billion_trillion",
+      "type": "ai_image",
+      "filename": "assets/images/10_billion_trillion.png",
+      "description": "[Prompt] Ultra-detailed digital art of a colossal neural network glowing inside a cosmic brain, numbers like '10B' and '1T' orbiting like planets, cinematic lighting, 4k, volumetric fog",
+      "is_optional": true
+    },
+    {
+      "scene_id": "11_brain_analogy",
+      "type": "ai_video",
+      "filename": "assets/videos/11_brain_analogy.mp4",
+      "description": "[Prompt] Macro time-lapse of glowing synaptic connections firing across a translucent human brain, golden light pulses traveling at neural speed, ultra-detailed, cinematic, shallow depth of field | Duration: 6s | Motion: medium",
+      "prompt": "Macro time-lapse of glowing synaptic connections firing across a translucent human brain, golden light pulses traveling at neural speed, ultra-detailed, cinematic, shallow depth of field",
+      "duration": 6,
+      "motion": "medium",
+      "is_optional": false
+    },
+    {
+      "scene_id": "24_multimodal_hint",
+      "type": "ai_image",
+      "filename": "assets/images/24_multimodal_hint.png",
+      "description": "Triptych digital art: left — abstract eye made of pixels, center — ear formed from soundwaves, right — brain with text+image+audio icons merging, cinematic lighting, 4k"
+    },
+    {
+      "scene_id": "25_multimodal_climax",
+      "type": "ai_video",
+      "filename": "assets/videos/25_multimodal_climax.mp4",
+      "description": "[Prompt] Slow-motion fusion sequence: pixel eye + soundwave ear + text stream collide at center, burst into radiant multi-icon orb (🖼️🎧📝🌐), lens flare, cinematic color grading | Duration: 7s | Motion: slow",
+      "prompt": "Slow-motion fusion sequence: pixel eye + soundwave ear + text stream collide at center, burst into radiant multi-icon orb (🖼️🎧📝🌐), lens flare, cinematic color grading",
+      "duration": 7,
+      "motion": "slow",
+      "is_optional": false
+    },
+    {
+      "scene_id": "24_multimodal_reveal",
+      "type": "ai_image",
+      "filename": "assets/images/24_multimodal_reveal.png",
+      "description": "[Prompt] Triptych digital art: left — abstract eye made of pixels, center — ear formed from soundwaves, right — brain with text+image+audio icons merging, cinematic lighting, 4k",
+      "is_optional": true
+    }
+  ],
+  "summary": "共25个场景，AI视频2个，AI生图2张，需要你准备4项素材",
+  "ai_image_count": 2,
+  "ai_video_count": 2,
+  "visual_mode": "video"
+}

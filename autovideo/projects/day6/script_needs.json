@@ -1,0 +1,133 @@
+{
+  "needs_list": [
+    {
+      "scene_id": "03通俗概括",
+      "type": "clipart",
+      "filename": "assets/manual/03通俗概括.png",
+      "description": "需要一张表示‘AI一本正经胡说八道’的幽默插画，关键词：AI robot, lying, confident, cartoon, humorous"
+    },
+    {
+      "scene_id": "09文字接龙",
+      "type": "clipart",
+      "filename": "assets/manual/09文字接龙.png",
+      "description": "需要一张表现‘文字接龙’机制的科技感插画，关键词：word chain, text prediction, puzzle pieces, language model"
+    },
+    {
+      "scene_id": "12缺乏坦诚",
+      "type": "clipart",
+      "filename": "assets/manual/12缺乏坦诚.png",
+      "description": "需要一张表现AI回避‘我不知道’的拟人化插画，关键词：AI robot, shrugging, question mark, embarrassed, cartoon"
+    },
+    {
+      "scene_id": "20事实性捏造",
+      "type": "clipart",
+      "filename": "assets/manual/20事实性捏造.png",
+      "description": "需要一张表现‘编造虚假文献’的插画，关键词：fake book, fake paper, broken link, red X, cartoon"
+    },
+    {
+      "scene_id": "24撒谎比喻",
+      "type": "clipart",
+      "filename": "assets/manual/24撒谎比喻.png",
+      "description": "需要一张表现‘撒一个谎，圆一百个谎’的比喻插画，关键词：lie chain, domino effect, tangled web, cartoon"
+    },
+    {
+      "scene_id": "28误当搜索引擎",
+      "type": "clipart",
+      "filename": "assets/manual/28误当搜索引擎.png",
+      "description": "需要一张表现用户误信AI如搜索引擎的插画，关键词：user trusting AI, magnifying glass, question mark, confusion, cartoon"
+    },
+    {
+      "scene_id": "33RAG技术",
+      "type": "clipart",
+      "filename": "assets/manual/33RAG技术.png",
+      "description": "需要一张表现RAG（检索增强生成）的插画，关键词：RAG, open book, search icon, AI brain, knowledge base, cartoon"
+    },
+    {
+      "scene_id": "36真实数据生成",
+      "type": "clipart",
+      "filename": "assets/manual/36真实数据生成.png",
+      "description": "需要一张表现AI调用真实API获取数据的插画，关键词：API call, weather icon, database, real-time data, cartoon"
+    },
+    {
+      "scene_id": "03_03",
+      "type": "clipart",
+      "filename": "assets/manual/03通俗概括.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "09_09",
+      "type": "clipart",
+      "filename": "assets/manual/09文字接龙.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "12_12",
+      "type": "clipart",
+      "filename": "assets/manual/12缺乏坦诚.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "15_15",
+      "type": "ai_image",
+      "filename": "assets/images/15_15.png",
+      "description": "[Prompt] Cartoon-style illustration of a confused student asking a question to an AI robot holding a scroll labeled '2008 Olympics'. Clean background, high quality 3D realistic cartoon style, bright lighting",
+      "is_optional": true
+    },
+    {
+      "scene_id": "16_16ai",
+      "type": "ai_image",
+      "filename": "assets/images/16_16ai.png",
+      "description": "[Prompt] Cartoon-style AI robot speaking confidently at an Olympic stadium podium, with floating fake text bubbles showing '《青年与体育》' and '1936–2008', high quality 3D realistic cartoon style, bright and clean",
+      "is_optional": true
+    },
+    {
+      "scene_id": "20_20",
+      "type": "clipart",
+      "filename": "assets/manual/20事实性捏造.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "24_24",
+      "type": "clipart",
+      "filename": "assets/manual/24撒谎比喻.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "28_28",
+      "type": "clipart",
+      "filename": "assets/manual/28误当搜索引擎.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "30_30",
+      "type": "ai_image",
+      "filename": "assets/images/30_30.png",
+      "description": "[Prompt] Friendly cartoon student wearing glasses and holding thick books, slightly confused, standing next to a glowing brain icon with tangled wires, high quality 3D realistic cartoon style, bright lighting",
+      "is_optional": true
+    },
+    {
+      "scene_id": "33_33rag",
+      "type": "clipart",
+      "filename": "assets/manual/33RAG技术.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    },
+    {
+      "scene_id": "36_36",
+      "type": "clipart",
+      "filename": "assets/manual/36真实数据生成.png",
+      "description": "优先使用免费开源素材：OpenMoji / unDraw / Storyset / SVG Repo / Wikimedia Commons / PublicDomainVectors。",
+      "is_optional": false
+    }
+  ],
+  "summary": "共38个场景，需要AI生图3张，需要你准备16项素材",
+  "ai_image_count": 3,
+  "ai_video_count": 0,
+  "visual_mode": "image"
+}

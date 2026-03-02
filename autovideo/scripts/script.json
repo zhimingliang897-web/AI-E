@@ -1,0 +1,586 @@
+[
+  {
+    "id": "01_title",
+    "text": "",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "什么是 Prompt？",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "fade_black"
+  },
+  {
+    "id": "02_superbrain",
+    "text": "在拥有了超级大脑和视觉感知能力之后，AI 并不能自动知晓你的具体意图。",
+    "visual": {
+      "type": "manim",
+      "prompt": "A 3D cartoon LLM brain with glowing neural connections, surrounded by eyes and ears icons; clean lab background, cinematic lighting",
+      "source": null,
+      "scene_class": "LLMWithSenses",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "03_needs_prompt",
+    "text": "它需要一个明确的指令来激活。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "需要指令激活",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "04_def_prompt",
+    "text": "这个指令，就叫 Prompt，中文通常翻译为‘提示词’。",
+    "visual": {
+      "type": "ai_image",
+      "prompt": "A high quality 3D realistic cartoon style close-up of a glowing golden key labeled 'PROMPT' floating above an open book with light beams, bright clean studio lighting, cinematic composition",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "05_core_bridge",
+    "text": "它是你输入给模型的一段文字，也是你和 AI 交流的核心桥梁。",
+    "visual": {
+      "type": "manim",
+      "prompt": "Two stylized 3D cartoon figures — one human holding a speech bubble, one AI robot holding a text input box — connected by a glowing bridge made of flowing words; soft focus background",
+      "source": null,
+      "scene_class": "HumanAIBridge",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "06_simple_def",
+    "text": "简单来说，Prompt 就是你对 AI 发出的具体任务指令。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "Prompt = 具体任务指令",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "07_why_prompt",
+    "text": "为什么叫 Prompt？这个词在英语里有‘提示、驱使’的含义。",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/07_why_prompt.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "08_actor_director",
+    "text": "我们可以把 AI 想象成一位博学但需要引导的演员，而你则是导演或提词员。",
+    "visual": {
+      "type": "ai_video",
+      "prompt": "A high quality 3D realistic cartoon style theater stage: a confident human director points at a thoughtful robot actor on stage, spotlight follows the gesture, cinematic shallow depth of field, warm lighting",
+      "source": "assets/videos/08_actor_director.mp4",
+      "scene_class": null,
+      "fallback": "ai_image::A high quality 3D realistic cartoon style theater stage with human director pointing at robot actor under spotlight, cinematic lighting, 4k",
+      "duration": 6,
+      "motion": "medium"
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "fade_black"
+  },
+  {
+    "id": "09_no_prompt_confusion",
+    "text": "如果你不给它明确的提示，它可能无法开始工作，或者生成的内容偏离预期。",
+    "visual": {
+      "type": "manim",
+      "prompt": "A 3D cartoon AI brain with question marks swirling around it, broken gears and mismatched icons floating nearby; dim ambient lighting",
+      "source": null,
+      "scene_class": "ConfusedLLM",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "10_clear_clues",
+    "text": "你的任务，就是提供清晰的线索，引导它基于这些线索，通过概率计算，一步步生成符合你要求的内容。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "清晰线索 → 概率生成",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "11_quality_matters",
+    "text": "Prompt 的质量，直接决定了 AI 的输出效果。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "质量决定输出",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "12_gigo",
+    "text": "这在计算机领域遵循一个基本原则：Garbage In, Garbage Out。",
+    "visual": {
+      "type": "manim",
+      "prompt": "Animated flowchart: trash can labeled 'Garbage In' → arrow → spinning LLM icon → arrow → trash can labeled 'Garbage Out'; bold clean typography",
+      "source": null,
+      "scene_class": "GIGOFlow",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "13_prob_tool",
+    "text": "大语言模型本质上是一个概率预测工具。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "LLM = 概率预测工具",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "14_constrain_range",
+    "text": "Prompt 的作用，就是‘限定’这个概率预测的范围和方向。",
+    "visual": {
+      "type": "manim",
+      "prompt": "A 3D cartoon probability distribution curve (bell shape), with a narrowing spotlight beam shrinking its width as 'Prompt' text appears above; blue-to-purple gradient",
+      "source": null,
+      "scene_class": "PromptConstraint",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "15_specific_precise",
+    "text": "你给的约束越具体，它生成的内容就越精准；",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "越具体 → 越精准",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "16_vague_uncontrollable",
+    "text": "你给的指令越模糊，结果就越容易不可控。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "越模糊 → 越失控",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "17_comparison_intro",
+    "text": "我们来看个对比。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "对比演示",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "18_bad_prompt",
+    "text": "模糊的 Prompt：你输入——写个故事。",
+    "visual": {
+      "type": "manim",
+      "prompt": "Red '❌' icon next to floating text '写个故事。' over chaotic cloud of random story fragments (dragon, spaceship, cupcake); low contrast, desaturated",
+      "source": null,
+      "scene_class": "BadPromptExample",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "19_ai_confusion",
+    "text": "AI 面临的困惑：写什么主题？给谁看？多长篇幅？什么风格？",
+    "visual": {
+      "type": "manim",
+      "prompt": "Cartoon AI head with four animated question marks popping up around it: 'Theme?', 'Audience?', 'Length?', 'Style?'; playful but confused expression",
+      "source": null,
+      "scene_class": "AILostInQuestions",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "20_bad_result",
+    "text": "结果：它可能生成一篇内容平淡、缺乏重点的流水账。",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/20_bad_result.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "21_good_prompt",
+    "text": "清晰的 Prompt：你输入——",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "清晰 Prompt 示例",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "22_good_prompt_detail",
+    "text": "你是一位科幻作家。请用简洁有力的风格，写一个关于‘只会说谎的机器人’的 300 字微小说，要求结局有反转。",
+    "visual": {
+      "type": "ai_video",
+      "prompt": "A high quality 3D realistic cartoon style sci-fi writing desk: holographic text '只会说谎的机器人' floats above keyboard, robot silhouette winks with sparkles, cinematic lens flare, smooth zoom-in",
+      "source": "assets/videos/22_good_prompt_detail.mp4",
+      "scene_class": null,
+      "fallback": "ai_image::A high quality 3D realistic cartoon style sci-fi desk with holographic text '只会说谎的机器人', winking robot silhouette, cinematic lighting, 4k",
+      "duration": 7,
+      "motion": "slow"
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "fade_black"
+  },
+  {
+    "id": "23_good_prompt_clarity",
+    "text": "AI 接收到的信息：明确了角色设定、写作风格、题材、字数限制以及结局要求。",
+    "visual": {
+      "type": "manim",
+      "prompt": "Five clean checklist items floating beside robot: 'Role: Sci-Fi Writer', 'Style: Concise', 'Topic: Lying Robot', 'Length: 300 words', 'Twist Ending'; green checkmarks",
+      "source": null,
+      "scene_class": "GoodPromptBreakdown",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "24_good_result",
+    "text": "结果：它生成了一篇结构完整、风格鲜明的短篇小说。",
+    "visual": {
+      "type": "clipart",
+      "prompt": null,
+      "source": "assets/manual/24_good_result.png",
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "25_new_programming",
+    "text": "通俗来说：Prompt 是 AI 时代的一种新式‘编程语言’。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "Prompt = 新式编程语言",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "26_old_vs_new",
+    "text": "过去我们用 Python、C++ 等代码指挥电脑；现在，我们用自然语言指挥 AI。",
+    "visual": {
+      "type": "manim",
+      "prompt": "Split-screen animation: left side shows classic code editor (Python/C++ syntax), right side shows chat interface with natural language prompt; arrow transitions from left to right",
+      "source": null,
+      "scene_class": "CodeToPromptTransition",
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "27_key_metaphor",
+    "text": "Prompt 就是你调动 AI 能力的‘钥匙’。",
+    "visual": {
+      "type": "ai_image",
+      "prompt": "A high quality 3D realistic cartoon style golden key labeled 'PROMPT' turning inside a glowing AI-brain-shaped lock, light bursts on turn, cinematic lighting",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "hidden",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "28_clear_value",
+    "text": "指令清晰准确，AI 就能发挥巨大价值；",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "清晰 → 巨大价值",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  },
+  {
+    "id": "29_vague_limitation",
+    "text": "指令模糊不清，AI 的表现就会大打折扣。",
+    "visual": {
+      "type": "solid_bg",
+      "prompt": "模糊 → 大打折扣",
+      "source": null,
+      "scene_class": null,
+      "fallback": null
+    },
+    "avatar": {
+      "mode": "pip_br",
+      "scale": 0.3
+    },
+    "audio": {
+      "mode": "auto",
+      "override": null
+    },
+    "transition": "crossfade"
+  }
+]
